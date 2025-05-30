@@ -1064,36 +1064,44 @@ button#mobile-menu-close,
     cursor: pointer;
 }
 
-.effortless-capture-card {
+.hero-card {
     max-width: 300px;
     margin: 0 auto;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+    background: white !important;
 }
 
-.effortless-capture-card img {
+.hero-card img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* AI Copilot Card Override */
-.ai-copilot-card {
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
-    background: white !important;
+.hero-card:hover {
+    box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.35) !important;
 }
 
-.dark .ai-copilot-card {
+.dark .hero-card {
+    max-width: 300px;
+    margin: 0 auto;
     background: #374151 !important;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
 }
 
-.ai-copilot-card:hover {
-    box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.35) !important;
+.dark .hero-card img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.dark .ai-copilot-card:hover {
+.dark .hero-card:hover {
     box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.6) !important;
 }
 
-.ai-copilot-image {
+.hero-card-image {
+    display: block;
+}
+
+.dark .hero-card-image {
     display: block;
 }
