@@ -1,0 +1,1057 @@
+/* Root Variables and Theme Setup */
+:root {
+    --voji-red: #e76f51;
+    --voji-orange: #f4a261;
+    --voji-yellow: #e9c46a;
+    --voji-green: #8ab17d;
+    --voji-blue: #2a9d8f;
+    --voji-purple: #264653;
+}
+
+/* Dark Theme */
+.dark {
+    --bg-primary: #264653;
+    --bg-secondary: #1a202c;
+    --text-primary: #ffffff;
+    --text-secondary: #f7fafc;
+    --text-muted: #e2e8f0;
+    --text-subtle: #cbd5e0;
+}
+
+/* Light Theme */
+.light {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --text-primary: #1a202c;
+    --text-secondary: #2d3748;
+    --text-muted: #374151;
+    --text-subtle: #4a5568;
+}
+
+/* Base Styles */
+* {
+    border-radius: 0 !important;
+    /* No rounded corners anywhere */
+}
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #ffffff;
+    color: #1a202c;
+}
+
+.dark body {
+    background-color: #1f2937;
+    color: #f9fafb;
+}
+
+/* Light theme body and base text color */
+.light,
+.light body {
+    background-color: #ffffff;
+    color: #1a202c;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Styles */
+#navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.dark #navbar {
+    background: rgba(38, 70, 83, 0.95);
+}
+
+#navbar.scrolled {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dark #navbar.scrolled {
+    background: rgba(38, 70, 83, 0.98);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link {
+    @apply text-voji-purple dark:text-white hover:text-voji-blue dark:hover:text-voji-yellow transition-colors font-medium;
+}
+
+.mobile-nav-link {
+    @apply text-3xl font-semibold text-voji-purple dark:text-white hover:text-voji-blue dark:hover:text-voji-yellow transition-colors;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg,
+            rgba(42, 157, 143, 0.1) 0%,
+            rgba(233, 196, 106, 0.1) 50%,
+            rgba(244, 162, 97, 0.1) 100%);
+    animation: gradientShift 8s ease-in-out infinite;
+}
+
+.dark .hero-bg {
+    background: linear-gradient(135deg,
+            rgba(38, 70, 83, 0.8) 0%,
+            rgba(42, 157, 143, 0.2) 50%,
+            rgba(244, 162, 97, 0.2) 100%);
+}
+
+@keyframes gradientShift {
+
+    0%,
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+
+    25% {
+        transform: translateX(-2px) translateY(-2px);
+    }
+
+    50% {
+        transform: translateX(2px) translateY(2px);
+    }
+
+    75% {
+        transform: translateX(-1px) translateY(1px);
+    }
+}
+
+/* Phone Mockup */
+.phone-mockup {
+    width: 280px;
+    height: 560px;
+    background: #1a1a1a;
+    border: 8px solid #333;
+    position: relative;
+    margin: 0 auto;
+}
+
+.phone-mockup::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 6px;
+    background: #666;
+}
+
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.app-interface {
+    text-align: center;
+    color: white;
+}
+
+.record-button {
+    width: 120px;
+    height: 120px;
+    background: var(--voji-red);
+    border: 4px solid white;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.pulse-ring {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border: 2px solid rgba(231, 111, 81, 0.5);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+.record-icon {
+    font-size: 48px;
+}
+
+.record-text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Capture Animation */
+.capture-animation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 48px;
+    padding: 40px;
+}
+
+.idea-bubble,
+.phone-tap,
+.voice-wave {
+    animation: float 3s ease-in-out infinite;
+}
+
+.phone-tap {
+    animation-delay: 1s;
+}
+
+.voice-wave {
+    animation-delay: 2s;
+}
+
+.arrow {
+    color: var(--voji-blue);
+    font-size: 32px;
+    animation: slideRight 2s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes slideRight {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+/* AI Visualization */
+.ai-visualization {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ai-nodes {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.node {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: var(--voji-blue);
+    animation: nodeGlow 2s ease-in-out infinite;
+}
+
+.node-1 {
+    top: 20px;
+    left: 20px;
+}
+
+.node-2 {
+    top: 20px;
+    right: 20px;
+    animation-delay: 0.5s;
+}
+
+.node-3 {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 1s;
+}
+
+.connection {
+    position: absolute;
+    height: 2px;
+    background: var(--voji-orange);
+    animation: connectionFlow 3s ease-in-out infinite;
+}
+
+.connection-1 {
+    top: 30px;
+    left: 40px;
+    width: 120px;
+}
+
+.connection-2 {
+    top: 30px;
+    right: 40px;
+    width: 80px;
+    transform: rotate(45deg);
+    transform-origin: right center;
+}
+
+@keyframes nodeGlow {
+
+    0%,
+    100% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes connectionFlow {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+.chat-mockup {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin-top: 40px;
+}
+
+.dark .chat-mockup {
+    background: #374151;
+}
+
+.chat-message {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.chat-message.user {
+    background: #f3f4f6;
+    color: #374151;
+    text-align: right;
+}
+
+.dark .chat-message.user {
+    background: #4b5563;
+    color: #f9fafb;
+}
+
+.chat-message.ai {
+    background: var(--voji-blue);
+    color: white;
+}
+
+/* Use Case Cards */
+.use-case-card {
+    @apply bg-white dark:bg-gray-800 p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center;
+    transform: translateY(0);
+}
+
+.use-case-card:hover {
+    transform: translateY(-5px);
+}
+
+.use-case-card .icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.use-case-card h3 {
+    @apply text-xl font-semibold text-voji-purple dark:text-white mb-4;
+}
+
+.use-case-card p {
+    @apply text-gray-700 dark:text-gray-200 leading-relaxed;
+}
+
+/* Feature Items */
+.feature-item {
+    @apply text-center p-6;
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.feature-item h3 {
+    @apply text-xl font-semibold text-voji-purple dark:text-white mb-4;
+}
+
+.feature-item p {
+    @apply text-gray-700 dark:text-gray-200 leading-relaxed;
+}
+
+/* Pricing Cards */
+.pricing-card {
+    @apply bg-white dark:bg-gray-800 p-8 shadow-lg text-center;
+    color: #1a202c;
+}
+
+.pro-card {
+    @apply border-2 border-voji-blue relative;
+}
+
+
+/* Showcase Carousel */
+.showcase-carousel {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel-container {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.screenshot-mockup {
+    width: 250px;
+    height: 450px;
+    background: #1a1a1a;
+    border: 6px solid #333;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.screenshot-content {
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.dark .screenshot-content {
+    background: #374151;
+    color: white;
+}
+
+.ideabook-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+.idea-entry,
+.saved-note {
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #f3f4f6;
+    color: #374151;
+    font-size: 14px;
+}
+
+.dark .idea-entry,
+.dark .saved-note {
+    background: #4b5563;
+    color: #f9fafb;
+}
+
+.screenshot-caption {
+    @apply text-center text-gray-700 dark:text-gray-200 font-medium;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #d1d5db;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background: var(--voji-blue);
+}
+
+/* App Store Badges */
+.app-store-badge {
+    position: relative;
+    display: inline-block;
+}
+
+.app-store-badge img {
+    width: 150px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.coming-soon-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Animations */
+.animate-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideInRight 1s ease-out forwards;
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Form Styles */
+input[type="email"] {
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border-color: var(--voji-blue);
+}
+
+/* Success/Error Messages */
+.form-message {
+    padding: 12px;
+    margin-top: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.form-message.success {
+    background: rgba(138, 177, 125, 0.1);
+    color: var(--voji-green);
+    border: 1px solid var(--voji-green);
+}
+
+.form-message.error {
+    background: rgba(231, 111, 81, 0.1);
+    color: var(--voji-red);
+    border: 1px solid var(--voji-red);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .phone-mockup {
+        width: 200px;
+        height: 400px;
+    }
+
+    .record-button {
+        width: 80px;
+        height: 80px;
+    }
+
+    .record-icon {
+        font-size: 32px;
+    }
+
+    .capture-animation {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 32px;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+        font-size: 24px;
+    }
+
+    .ai-visualization {
+        height: 300px;
+    }
+
+    .chat-mockup {
+        max-width: 250px;
+    }
+
+    .screenshot-mockup {
+        width: 200px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .use-case-card,
+    .feature-item {
+        margin-bottom: 20px;
+    }
+
+    .pricing-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Loading States */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus Styles */
+button:focus,
+input:focus,
+a:focus {
+    outline: 2px solid var(--voji-blue);
+    outline-offset: 2px;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .hero-bg {
+        opacity: 0.3;
+    }
+
+    .use-case-card,
+    .pricing-card,
+    .chat-mockup {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Text Contrast Improvements */
+li span {
+    color: inherit;
+}
+
+.dark li span {
+    color: #f9fafb;
+}
+
+/* Ensure proper contrast for pricing card text */
+.dark .pricing-card {
+    color: #f9fafb;
+}
+
+/* Mobile Menu Contrast */
+#mobile-menu {
+    color: #1a202c;
+}
+
+.dark #mobile-menu {
+    color: #f9fafb;
+}
+
+/* Button and Input Contrast */
+button,
+input {
+    color: inherit;
+}
+
+.dark button:not(.bg-voji-red):not(.bg-voji-blue),
+.dark input {
+    color: #f9fafb;
+}
+
+/* Section Background Contrast */
+.bg-gray-50 {
+    color: #1a202c;
+}
+
+.dark .bg-gray-50 {
+    color: #f9fafb;
+}
+
+/* Ensure headings have proper contrast */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: inherit;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+    color: #ffffff;
+}
+
+/* LIGHT THEME CONTRAST FIXES */
+
+/* Base light theme text colors - ensure all text is dark enough for contrast */
+.light {
+    color: #1a202c;
+}
+
+.light p,
+.light span,
+.light li,
+.light div {
+    color: #1a202c;
+}
+
+/* Override all gray text colors in light theme to be much darker for better contrast */
+.light .text-gray-700,
+.light .text-gray-600,
+.light .text-gray-500,
+.light .text-gray-400,
+.light .text-gray-300 {
+    color: #1a202c !important;
+}
+
+/* Specific overrides for different gray shades to use dark colors */
+.light .text-gray-800 {
+    color: #1a202c !important;
+}
+
+.light .text-gray-900 {
+    color: #0f172a !important;
+}
+
+/* CRITICAL FIX: Override voji-purple text color in light theme for better contrast */
+.light .text-voji-purple {
+    color: #1a202c !important;
+}
+
+/* Hero section specific fixes for light theme */
+.light #hero h1,
+.light #hero p {
+    color: #1a202c !important;
+}
+
+/* Hero waitlist box specific fixes for light theme */
+.light #hero .bg-white {
+    background-color: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+}
+
+.light #hero .bg-white h3 {
+    color: var(--voji-blue) !important;
+}
+
+.light #hero .bg-white p {
+    color: #1a202c !important;
+}
+
+.light #hero .bg-white .text-voji-purple {
+    color: #1a202c !important;
+}
+
+.light #hero .bg-white .text-gray-700 {
+    color: #4a5568 !important;
+}
+
+/* Hero waitlist form input fixes for light theme */
+.light #hero input[type="email"] {
+    background-color: #ffffff !important;
+    border-color: #d1d5db !important;
+    color: #1a202c !important;
+}
+
+.light #hero input[type="email"]:focus {
+    border-color: var(--voji-blue) !important;
+}
+
+.light #hero input[type="email"]::placeholder {
+    color: #6b7280 !important;
+}
+
+/* Pricing section heading fix for light theme */
+.light #pricing h2 {
+    color: #1a202c !important;
+}
+
+/* Section-specific light theme fixes */
+.light section {
+    color: #1a202c;
+}
+
+.light section p,
+.light section span,
+.light section li,
+.light section div {
+    color: #1a202c;
+}
+
+/* Background sections in light theme */
+.light .bg-gray-50,
+.light .bg-gray-100 {
+    background-color: #f9fafb !important;
+    color: #1a202c !important;
+}
+
+.light .bg-gray-50 *,
+.light .bg-gray-100 * {
+    color: #1a202c !important;
+}
+
+/* Form elements in light theme */
+.light input[type="email"] {
+    color: #1a202c !important;
+    background-color: #ffffff !important;
+    border-color: #374151 !important;
+}
+
+.light input[type="email"]::placeholder {
+    color: #6b7280 !important;
+}
+
+/* Chat and UI elements in light theme */
+.light .chat-message.user {
+    background: #f3f4f6 !important;
+    color: #1a202c !important;
+}
+
+.light .chat-message.ai {
+    background: var(--voji-blue) !important;
+    color: white !important;
+}
+
+.light .idea-entry,
+.light .saved-note {
+    background: #f3f4f6 !important;
+    color: #1a202c !important;
+}
+
+.light .screenshot-content {
+    background: white !important;
+    color: #1a202c !important;
+}
+
+.light .screenshot-content * {
+    color: #1a202c !important;
+}
+
+/* Feature and use case cards in light theme */
+.light .feature-item p,
+.light .feature-item span,
+.light .use-case-card p,
+.light .use-case-card span {
+    color: #1a202c !important;
+}
+
+/* Pricing card text in light theme */
+.light .pricing-card {
+    color: #1a202c !important;
+}
+
+.light .pricing-card * {
+    color: #1a202c !important;
+}
+
+/* Pricing card headings fix */
+.light .pricing-card h3 {
+    color: #1a202c !important;
+}
+
+/* Special case for pricing card with specific gray text */
+.light .pricing-card .text-gray-600,
+.light .pricing-card .text-gray-400,
+.light .pricing-card .text-gray-300 {
+    color: #4a5568 !important;
+}
+
+/* List items and text elements */
+.light ul li span,
+.light ol li span {
+    color: #1a202c !important;
+}
+
+/* Footer adjustments for light theme */
+.light footer {
+    background-color: var(--voji-purple) !important;
+    color: white !important;
+}
+
+.light footer * {
+    color: white !important;
+}
+
+/* Make sure any remaining text elements have proper contrast */
+.light .text-sm,
+.light .text-lg,
+.light .text-xl,
+.light .text-2xl {
+    color: #1a202c !important;
+}
+
+/* All heading elements in light theme should be dark */
+.light h1,
+.light h2,
+.light h3,
+.light h4,
+.light h5,
+.light h6 {
+    color: #1a202c !important;
+}
+
+/* Navigation hover states in light theme */
+.light .hover\:bg-gray-100:hover {
+    background-color: #f3f4f6 !important;
+}
+
+/* Screenshot caption and other small text */
+.light .screenshot-caption {
+    color: #1a202c !important;
+}
+
+/* Override any remaining light-colored text in light theme */
+.light .text-muted,
+.light .text-subtle {
+    color: #374151 !important;
+}
+
+/* Ensure proper contrast for any remaining elements */
+.light * {
+    color: inherit;
+}
+
+/* Special handling for elements that should remain light (like in dark backgrounds) */
+.light .bg-voji-red *,
+.light .bg-voji-blue *,
+.light .bg-voji-green *,
+.light .bg-voji-purple * {
+    color: white !important;
+}

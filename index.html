@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voji - Ideas Spoken. Stories Born.</title>
+    <meta name="description"
+        content="Capture thoughts instantly with your voice. Let AI weave them into compelling stories. Coming Soon!">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Afacad:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Signika:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./dist/output.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="font-afacad transition-colors duration-300">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 lg:h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <h1 class="font-pacifico text-2xl lg:text-3xl text-voji-blue dark:text-voji-yellow">Voji</h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#why-voji" class="nav-link">Why Voji?</a>
+                    <a href="#showcase" class="nav-link">Features</a>
+                    <a href="#use-cases" class="nav-link">Use Cases</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <button onclick="scrollToWaitlist()"
+                        class="bg-voji-red text-white px-6 py-2 font-medium hover:bg-opacity-90 transition-colors">
+                        Join Waitlist
+                    </button>
+                    <button id="theme-toggle"
+                        class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                        <svg id="theme-icon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center space-x-4">
+                    <button id="theme-toggle-mobile"
+                        class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <button id="mobile-menu-toggle" class="p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu"
+            class="lg:hidden fixed inset-0 z-50 bg-white dark:bg-voji-purple transform translate-x-full transition-transform duration-300">
+            <div class="flex flex-col h-full">
+                <div class="flex justify-between items-center p-4 border-b dark:border-gray-700">
+                    <h1 class="font-pacifico text-2xl text-voji-blue dark:text-voji-yellow">Voji</h1>
+                    <button id="mobile-menu-close" class="p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex-1 flex flex-col justify-center space-y-8 px-8">
+                    <a href="#why-voji" class="mobile-nav-link">Features</a>
+                    <a href="#use-cases" class="mobile-nav-link">Use Cases</a>
+                    <a href="#why-voji" class="mobile-nav-link">Why Voji?</a>
+                    <a href="#pricing" class="mobile-nav-link">Pricing</a>
+                    <button onclick="scrollToWaitlist()"
+                        class="bg-voji-red text-white px-8 py-4 text-lg font-medium hover:bg-opacity-90 transition-colors">
+                        Join Waitlist
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="hero-bg"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="text-center lg:text-left space-y-8 animate-fade-in">
+                    <h1
+                        class="font-signika text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-voji-purple dark:text-white leading-tight">
+                        Ideas Spoken.<br>Stories Born.
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-voji-purple dark:text-white leading-relaxed">
+                        Capture thoughts instantly with your voice. Let AI weave them into compelling stories.
+                    </p>
+                    <p class="text-lg text-gray-800 dark:text-gray-100 leading-relaxed">
+                        Stop letting brilliant ideas slip away. With Voji, a single tap records your voice, and our
+                        smart AI helps you organize, brainstorm, and transform those sparks into polished narratives or
+                        actionable lists, your call.
+                    </p>
+
+                    <!-- Waitlist Form -->
+                    <div class="bg-white dark:bg-gray-800 p-8 shadow-lg max-w-md mx-auto lg:mx-0">
+                        <h3 class="text-2xl lg:text-3xl font-semibold text-voji-blue dark:text-voji-yellow mb-4">
+                            Be the First to Experience Voji!
+                        </h3>
+                        <p class="text-lg mb-6 text-voji-purple dark:text-white">
+                            Join our waitlist and get <strong>60 Days of Voji Pro FREE</strong> upon launch!
+                        </p>
+                        <form id="waitlist-form" class="space-y-4">
+                            <input type="email" id="email-input" placeholder="Your Email Address" required
+                                class="w-full px-4 py-3 border-2 border-voji-purple dark:border-gray-600 bg-white dark:bg-gray-700 text-voji-purple dark:text-white focus:border-voji-blue focus:outline-none transition-colors">
+                            <button type="submit"
+                                class="w-full bg-voji-red text-white px-6 py-3 font-medium hover:bg-opacity-90 transition-colors">
+                                Notify Me & Claim Free Pro
+                            </button>
+                        </form>
+                        <p class="text-sm text-gray-700 dark:text-gray-300 mt-4">
+                            We respect your privacy. No spam, ever. Get notified for iOS & Android launch.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Device Mockup -->
+                <div class="flex justify-center lg:justify-end animate-slide-in-right">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="app-interface">
+                                <div class="record-button">
+                                    <div class="pulse-ring"></div>
+                                    <div class="record-icon">🎤</div>
+                                </div>
+                                <p class="record-text">Tap to Record</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Effortless Capture Section -->
+    <section id="effortless-capture" class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-on-scroll">
+                    <div class="capture-animation">
+                        <div class="idea-bubble">💡</div>
+                        <div class="arrow">→</div>
+                        <div class="phone-tap">📱</div>
+                        <div class="arrow">→</div>
+                        <div class="voice-wave">🎵</div>
+                    </div>
+                </div>
+                <div class="space-y-6 animate-on-scroll">
+                    <h2 class="text-4xl lg:text-5xl font-bold text-voji-purple dark:text-white">
+                        Capture Brilliance, Instantly.
+                    </h2>
+                    <p class="text-xl text-gray-700 dark:text-gray-100 leading-relaxed">
+                        Inspiration strikes anywhere, anytime. Voji's one-tap voice recording means you're always ready.
+                        No fumbling with notes, no lost trains of thought. Just speak, and Voji listens.
+                    </p>
+                    <p class="text-xl font-semibold text-voji-green">
+                        Effortless. Fast. Always Ready.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Co-Pilot Section -->
+    <section id="ai-copilot" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 animate-on-scroll">
+                    <h2 class="text-4xl lg:text-5xl font-bold text-voji-purple dark:text-white">
+                        Your Ideas, Amplified by AI.
+                    </h2>
+                    <p class="text-xl text-gray-800 dark:text-gray-100 leading-relaxed">
+                        Your ideas deserve more than just storage—they need a creative partner. Voji doesn't just
+                        transcribe; it understands, organizes, and helps you explore. Voji is your personal
+                        brainstorming buddy, available 24/7.
+                    </p>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-voji-green text-xl">✓</span>
+                            <span><strong>Summarize & Organize:</strong> Get quick overviews of your recorded
+                                thoughts.</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-voji-green text-xl">✓</span>
+                            <span><strong>Brainstorm & Expand:</strong> Explore new angles and develop your ideas
+                                further.</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-voji-green text-xl">✓</span>
+                            <span><strong>Customize Your AI:</strong> Adjust tone, verbosity, and even provide your own
+                                prompts for a truly personalized experience.</span>
+                        </li>
+                    </ul>
+                    <p class="text-xl font-semibold text-voji-orange">
+                        Intelligent. Customizable. Powerful.
+                    </p>
+                </div>
+                <div class="animate-on-scroll">
+                    <div class="ai-visualization">
+                        <div class="ai-nodes">
+                            <div class="node node-1"></div>
+                            <div class="node node-2"></div>
+                            <div class="node node-3"></div>
+                            <div class="connection connection-1"></div>
+                            <div class="connection connection-2"></div>
+                        </div>
+                        <div class="chat-mockup">
+                            <div class="chat-message user">Summarize my ideas for 'My Novel' ideabook</div>
+                            <div class="chat-message ai">Your novel ideas center around a dystopian future where AI and
+                                humans coexist. Key themes include identity, consciousness, and the nature of reality...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Voji Section -->
+    <section id="why-voji"
+        class="py-20 bg-gradient-to-br from-voji-blue/5 to-voji-green/5 dark:from-voji-blue/10 dark:to-voji-green/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2
+                class="text-4xl lg:text-5xl font-bold text-center text-voji-purple dark:text-white mb-16 animate-on-scroll">
+                More Than Just Notes.
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-item animate-on-scroll" style="animation-delay: 0.1s">
+                    <div class="feature-icon" style="color: #2a9d8f;">🎤</div>
+                    <h3>One-Tap Voice Genius</h3>
+                    <p>Effortless capture meets AI brilliance. Speak your mind, Voji handles the rest.</p>
+                </div>
+                <div class="feature-item animate-on-scroll" style="animation-delay: 0.2s">
+                    <div class="feature-icon" style="color: #f4a261;">🤖</div>
+                    <h3>Your AI, Your Rules</h3>
+                    <p>Highly customizable AI assistant that adapts to your unique style and needs.</p>
+                </div>
+                <div class="feature-item animate-on-scroll" style="animation-delay: 0.3s">
+                    <div class="feature-icon" style="color: #e9c46a;">🏷️</div>
+                    <h3>Smart Organization</h3>
+                    <p>Customizable AI-powered color-coding keeps your ideabooks organized easily.</p>
+                </div>
+                <div class="feature-item animate-on-scroll" style="animation-delay: 0.4s">
+                    <div class="feature-icon" style="color: #8ab17d;">🔒</div>
+                    <h3>Private & Secure</h3>
+                    <p>Your thoughts are yours. Robust privacy with optional passcode lock for your peace of mind.</p>
+                </div>
+                <div class="feature-item animate-on-scroll" style="animation-delay: 0.5s">
+                    <div class="feature-icon" style="color: #e76f51;">📱</div>
+                    <h3>Seamless Across Devices</h3>
+                    <p>Access and manage your ideabooks anytime, anywhere. Your ideas, synced.</p>
+                </div>
+                <div class="feature-item animate-on-scroll" style="animation-delay: 0.6s">
+                    <div class="feature-icon" style="color: #e76f51;">✨</div>
+                    <h3>Saved Prompts</h3>
+                    <p>Repeat AI's answers with a single tap, updated with your new ideas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Showcase Section -->
+    <section id="showcase" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2
+                class="text-4xl lg:text-5xl font-bold text-center text-voji-purple dark:text-white mb-16 animate-on-scroll">
+                Beautifully Simple. Powerfully Smart.
+            </h2>
+            <div class="showcase-carousel animate-on-scroll">
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <div class="screenshot-mockup">
+                            <div class="screenshot-content ideabook-list">
+                                <div class="ideabook-item" style="background-color: #e76f51;">Personal Thoughts</div>
+                                <div class="ideabook-item" style="background-color: #8ab17d;">Project Ideas</div>
+                                <div class="ideabook-item" style="background-color: #2a9d8f;">Travel Plans</div>
+                            </div>
+                        </div>
+                        <p class="screenshot-caption">Organize with vibrant AI-suggested colors.</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="screenshot-mockup">
+                            <div class="screenshot-content ideas-tab">
+                                <div class="idea-entry">💡 App idea for voice notes</div>
+                                <div class="idea-entry">🎵 Song lyrics about technology</div>
+                                <div class="idea-entry">📝 Blog post on AI creativity</div>
+                            </div>
+                        </div>
+                        <p class="screenshot-caption">All your thoughts, neatly captured.</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="screenshot-mockup">
+                            <div class="screenshot-content chat-tab">
+                                <div class="chat-message user">Help me organize these ideas</div>
+                                <div class="chat-message ai">I can group them by theme and suggest next steps...</div>
+                            </div>
+                        </div>
+                        <p class="screenshot-caption">Brainstorm and refine with your AI co-pilot.</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="screenshot-mockup">
+                            <div class="screenshot-content notes-tab">
+                                <div class="saved-note">📋 Project roadmap generated by AI</div>
+                                <div class="saved-note">✨ Creative writing prompts</div>
+                                <div class="saved-note">🎯 Goal breakdown and action items</div>
+                            </div>
+                        </div>
+                        <p class="screenshot-caption">Turn conversations into actionable notes.</p>
+                    </div>
+                </div>
+                <div class="carousel-dots">
+                    <button class="dot active" onclick="showSlide(0)"></button>
+                    <button class="dot" onclick="showSlide(1)"></button>
+                    <button class="dot" onclick="showSlide(2)"></button>
+                    <button class="dot" onclick="showSlide(3)"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="use-cases" class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2
+                class="text-4xl lg:text-5xl font-bold text-center text-voji-purple dark:text-white mb-16 animate-on-scroll">
+                How Will You Use Voji?
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="use-case-card animate-on-scroll" style="animation-delay: 0.1s">
+                    <div class="icon" style="color: #e9c46a;">📖</div>
+                    <h3>Personal Diary</h3>
+                    <p>Speak your mind throughout the day. At night, let Voji craft your daily story.</p>
+                </div>
+                <div class="use-case-card animate-on-scroll" style="animation-delay: 0.2s">
+                    <div class="icon" style="color: #f4a261;">🧳</div>
+                    <h3>Travel Planning</h3>
+                    <p>Track flight numbers, hotel addresses, and to-dos. Ask Voji for your daily itinerary.</p>
+                </div>
+                <div class="use-case-card animate-on-scroll" style="animation-delay: 0.3s">
+                    <div class="icon" style="color: #8ab17d;">💡</div>
+                    <h3>Ideas brainstorming</h3>
+                    <p>Collect every spark for your next masterpiece. Voji keeps it all organized.</p>
+                </div>
+                <div class="use-case-card animate-on-scroll" style="animation-delay: 0.4s">
+                    <div class="icon" style="color: #e76f51;">🛒</div>
+                    <h3>Shopping Lists</h3>
+                    <p>Never forget an item again. Just say it, and Voji remembers it for your next trip.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing"
+        class="py-20 bg-gradient-to-br from-voji-blue/5 to-voji-green/5 dark:from-voji-blue/10 dark:to-voji-green/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2
+                class="text-4xl lg:text-5xl font-bold text-center text-voji-purple dark:text-white mb-16 animate-on-scroll">
+                Choose Your Voji Experience
+            </h2>
+            <div class="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Free Tier -->
+                <div class="pricing-card animate-on-scroll">
+                    <h3 class="text-3xl font-bold mb-4">Free</h3>
+                    <div class="text-2xl font-semibold mb-6 text-voji-green">Always Free</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-voji-green text-xl">✓</span>
+                            <span>Capture ideas with voice</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-voji-green text-xl">✓</span>
+                            <span>Basic AI assistance (summarize, organize)</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-voji-green text-xl">✓</span>
+                            <span>Limited usage and quotas</span>
+                        </li>
+                    </ul>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">
+                        Perfect for getting started and casual idea capture.
+                    </p>
+                </div>
+
+                <!-- Pro Tier -->
+                <div class="pricing-card pro-card animate-on-scroll">
+                    <h3 class="text-3xl font-bold mb-4">Pro</h3>
+                    <div class="text-2xl font-semibold mb-2 text-voji-green">$4.99 per month, billed yearly</div>
+                    <div class="text-lg mb-6 text-gray-600 dark:text-gray-400">or $5.99 if billed monthly</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-voji-green text-xl">✓</span>
+                            <span>Everything in Free, plus:</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-voji-green text-xl">✓</span>
+                            <span>Unlimited access to all features</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-voji-green text-xl">✓</span>
+                            <span>Full control over AI (tone, verbosity, system prompts)</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-voji-green text-xl">✓</span>
+                            <span>Customize app behavior and look</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-voji-green text-xl">✓</span>
+                            <span>Priority access to new features (e.g. collaborative ideabooks coming soon)</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-voji-green text-xl">✓</span>
+                            <span>No commitment, cancel anytime</span>
+                        </li>
+                    </ul>
+                    <button onclick="scrollToWaitlist()"
+                        class="w-full bg-voji-red text-white px-6 py-3 font-medium hover:bg-opacity-90 transition-colors mb-4">
+                        Get Notified for Pro Access
+                    </button>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">
+                        Unlock the full power of Voji for thinkers and creators.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="final-cta"
+        class="py-20 bg-gradient-to-r from-voji-blue/10 to-voji-green/10 dark:from-voji-blue/20 dark:to-voji-green/20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="animate-on-scroll space-y-8">
+                <h2 class="text-4xl lg:text-5xl font-bold text-voji-blue dark:text-voji-yellow">
+                    Don't Miss Out on Voji!
+                </h2>
+                <p class="text-xl text-gray-800 dark:text-gray-100 leading-relaxed">
+                    Voji is almost here.<br>Join the waitlist to be among the first
+                    to experience it and claim your <strong>60 days of Voji Pro for FREE</strong>.
+                </p>
+
+                <!-- Final Waitlist Form -->
+                <div class="bg-white dark:bg-gray-800 p-8 shadow-lg max-w-md mx-auto">
+                    <form id="final-waitlist-form" class="space-y-4">
+                        <input type="email" placeholder="Your Email Address" required
+                            class="w-full px-4 py-3 border-2 border-voji-purple dark:border-gray-600 bg-white dark:bg-gray-700 text-voji-purple dark:text-white focus:border-voji-blue focus:outline-none transition-colors">
+                        <button type="submit"
+                            class="w-full bg-voji-red text-white px-6 py-3 font-medium hover:bg-opacity-90 transition-colors">
+                            Join Waitlist & Get Free Pro
+                        </button>
+                    </form>
+                </div>
+
+                <!-- App Store Badges -->
+                <div class="flex justify-center space-x-4 mt-8">
+                    <div class="app-store-badge">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                            alt="Download on the App Store" class="h-12">
+                    </div>
+                    <div class="app-store-badge">
+                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                            alt="Get it on Google Play" class="h-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-voji-purple dark:bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4">
+                <p class="text-gray-200">
+                    © 2024 Voji (voji.app). All Rights Reserved.
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <a href="#privacy" class="text-gray-200 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#terms" class="text-gray-200 hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
