@@ -75,9 +75,9 @@
 
     <!-- Mobile Menu Overlay -->
     <div id="mobile-menu"
-        class="lg:hidden fixed inset-0 z-50 bg-white dark:bg-voji-purple transform translate-x-full transition-transform duration-300">
+        class="lg:hidden fixed inset-0 z-50 bg-gray-50 dark:bg-voji-purple transform translate-x-full transition-transform duration-300">
         <div class="flex flex-col h-full">
-            <div class="flex justify-between items-center p-4 border-b dark:border-gray-700">
+            <div class="flex justify-between items-center p-4 dark:border-b dark:border-gray-700">
                 <h1 class="font-pacifico text-2xl text-voji-blue dark:text-voji-yellow">Voji</h1>
                 <button id="mobile-menu-close" class="p-2">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -86,7 +86,8 @@
                     </svg>
                 </button>
             </div>
-            <div class="flex-1 flex flex-col justify-center space-y-8 px-8">
+            <!-- Menu Links Container -->
+            <div class="flex-1 flex flex-col justify-start pt-8 space-y-8 px-8">
                 <a href="#why-voji" class="mobile-nav-link">Why Voji?</a>
                 <a href="#showcase" class="mobile-nav-link">Features</a>
                 <a href="#use-cases" class="mobile-nav-link">Use Cases</a>
