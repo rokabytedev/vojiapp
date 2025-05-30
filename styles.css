@@ -1175,7 +1175,7 @@ button#mobile-menu-close,
     max-width: 300px;
     margin: 0 auto;
     background: #374151 !important;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
+    box-shadow: 0 25px 50px -12px rgba(255, 255, 255, 0.3) !important;
 }
 
 .dark .hero-card img {
@@ -1185,7 +1185,7 @@ button#mobile-menu-close,
 }
 
 .dark .hero-card:hover {
-    box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.6) !important;
+    box-shadow: 0 35px 60px -12px rgba(255, 255, 255, 0.3) !important;
 }
 
 .hero-card-image {
