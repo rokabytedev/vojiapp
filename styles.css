@@ -737,9 +737,8 @@ input[type="email"]:focus {
 
 /* Focus Styles */
 button:focus,
-input:focus,
 a:focus {
-    outline: 2px solid var(--voji-blue);
+    outline: none;
     outline-offset: 2px;
 }
 
@@ -1054,4 +1053,24 @@ h6 {
 .light .bg-voji-green *,
 .light .bg-voji-purple * {
     color: white !important;
+}
+
+a,
+button#theme-toggle,
+button#theme-toggle-mobile,
+button#mobile-menu-toggle,
+button#mobile-menu-close,
+.carousel-dots button {
+    cursor: pointer;
+}
+
+.effortless-capture-card {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.effortless-capture-card img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
