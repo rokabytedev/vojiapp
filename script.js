@@ -27,6 +27,7 @@ class ThemeManager {
         document.documentElement.classList.remove('light', 'dark');
         document.documentElement.classList.add(theme);
         this.updateThemeIcon(theme);
+        this.updateThemeImages(theme);
         this.theme = theme;
     }
 
@@ -37,6 +38,22 @@ class ThemeManager {
         
         icons.forEach(icon => {
             icon.innerHTML = theme === 'dark' ? sunIcon : moonIcon;
+        });
+    }
+
+    updateThemeImages(theme) {
+        const themeImages = document.querySelectorAll('.theme-switchable-image');
+        themeImages.forEach(img => {
+            const lightSrc = img.src.replace(/_dark\.(png|jpg|jpeg|gif|webp)/, '.$1');
+            const darkSrc = img.getAttribute('data-dark-src');
+            
+            if (theme === 'dark' && darkSrc) {
+                img.src = darkSrc;
+            } else {
+                // For light theme, use the original src (without _dark suffix)
+                const originalSrc = lightSrc || img.getAttribute('src').replace(/_dark\.(png|jpg|jpeg|gif|webp)/, '.$1');
+                img.src = originalSrc;
+            }
         });
     }
 
