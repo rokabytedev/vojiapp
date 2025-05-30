@@ -415,20 +415,110 @@ html {
 
 /* Feature Items */
 .feature-item {
-    @apply text-center p-6;
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-icon {
-    font-size: 48px;
-    margin-bottom: 16px;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
 }
 
 .feature-item h3 {
-    @apply text-xl font-semibold text-voji-purple dark:text-white mb-4;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 .feature-item p {
-    @apply text-gray-700 dark:text-gray-200 leading-relaxed;
+    color: #6b7280;
+}
+
+/* New Feature Card Styles */
+.feature-card {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    pointer-events: none;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border-color: rgba(42, 157, 143, 0.2);
+}
+
+.feature-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    height: 80px;
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    stroke-width: 2;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1);
+    stroke-width: 2.5;
+}
+
+.feature-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-title {
+    transform: scale(1.05);
+}
+
+.feature-description {
+    color: #6b7280;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Dark theme styles for feature cards */
+.dark .feature-card {
+    background: #374151;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.dark .feature-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: rgba(233, 196, 106, 0.3);
+}
+
+.dark .feature-description {
+    color: #d1d5db;
 }
 
 /* Pricing Cards */

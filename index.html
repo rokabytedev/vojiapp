@@ -33,8 +33,8 @@
 
                 <!-- Desktop Navigation -->
                 <div class="hidden lg:flex items-center space-x-8">
-                    <a href="#why-voji" class="nav-link">Why Voji?</a>
-                    <a href="#showcase" class="nav-link">Features</a>
+                    <a href="#effortless-capture" class="nav-link">Why Voji?</a>
+                    <a href="#features" class="nav-link">Features</a>
                     <a href="#use-cases" class="nav-link">Use Cases</a>
                     <a href="#pricing" class="nav-link">Pricing</a>
                     <button id="theme-toggle" class="p-2 rounded-lg transition-colors cursor-pointer">
@@ -198,8 +198,8 @@
         </div>
     </section>
 
-    <!-- Why Voji Section -->
-    <section id="why-voji"
+    <!-- Features Section -->
+    <section id="features"
         class="py-20 bg-gradient-to-br from-voji-blue/5 to-voji-green/5 dark:from-voji-blue/10 dark:to-voji-green/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2
@@ -207,35 +207,59 @@
                 More Than Just Notes Taking.
             </h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="feature-item animate-on-scroll" style="animation-delay: 0.1s">
-                    <div class="feature-icon" style="color: #2a9d8f;">🎤</div>
-                    <h3>One-Tap Voice Genius</h3>
-                    <p>Effortless capture meets AI brilliance. Speak your mind, Voji handles the rest.</p>
+                <div class="feature-card animate-on-scroll" style="animation-delay: 0.1s">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon" style="color: #2a9d8f;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title" style="color: #2a9d8f;">One-Tap Voice Genius</h3>
+                    <p class="feature-description">Effortless capture meets AI brilliance. Speak your mind, Voji handles the rest.</p>
                 </div>
-                <div class="feature-item animate-on-scroll" style="animation-delay: 0.2s">
-                    <div class="feature-icon" style="color: #f4a261;">🤖</div>
-                    <h3>Your AI, Your Rules</h3>
-                    <p>Highly customizable AI assistant that adapts to your unique style and needs.</p>
+                <div class="feature-card animate-on-scroll" style="animation-delay: 0.2s">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon" style="color: #f4a261;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title" style="color: #f4a261;">Your AI, Your Rules</h3>
+                    <p class="feature-description">Highly customizable AI. You can adjust the tone, verbosity and even the system prompt!</p>
                 </div>
-                <div class="feature-item animate-on-scroll" style="animation-delay: 0.3s">
-                    <div class="feature-icon" style="color: #e9c46a;">🏷️</div>
-                    <h3>Smart Organization</h3>
-                    <p>Customizable AI-powered color-coding keeps your ideabooks organized easily.</p>
+                <div class="feature-card animate-on-scroll" style="animation-delay: 0.3s">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon" style="color: #e9c46a;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title" style="color: #e9c46a;">Smart Organization</h3>
+                    <p class="feature-description">AI-powered, customizable color-coding keeps your ideabooks organized easily.</p>
                 </div>
-                <div class="feature-item animate-on-scroll" style="animation-delay: 0.4s">
-                    <div class="feature-icon" style="color: #8ab17d;">🔒</div>
-                    <h3>Private & Secure</h3>
-                    <p>Your thoughts are yours. Robust privacy with optional passcode lock for your peace of mind.</p>
+                <div class="feature-card animate-on-scroll" style="animation-delay: 0.4s">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon" style="color: #8ab17d;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title" style="color: #8ab17d;">Private & Secure</h3>
+                    <p class="feature-description">Your thoughts are yours. Robust privacy with optional passcode lock for your peace of mind.</p>
                 </div>
-                <div class="feature-item animate-on-scroll" style="animation-delay: 0.5s">
-                    <div class="feature-icon" style="color: #e76f51;">📱</div>
-                    <h3>Seamless Across Devices</h3>
-                    <p>Access and manage your ideabooks anytime, anywhere. Your ideas, synced.</p>
+                <div class="feature-card animate-on-scroll" style="animation-delay: 0.5s">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon" style="color: #e76f51;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title" style="color: #e76f51;">Seamless Across Devices</h3>
+                    <p class="feature-description">Access and manage your ideabooks anytime, anywhere. Your ideas, synced.</p>
                 </div>
-                <div class="feature-item animate-on-scroll" style="animation-delay: 0.6s">
-                    <div class="feature-icon" style="color: #e76f51;">✨</div>
-                    <h3>Saved Prompts</h3>
-                    <p>Repeat AI's answers with a single tap, updated with your new ideas.</p>
+                <div class="feature-card animate-on-scroll" style="animation-delay: 0.6s">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon" style="color: #a855f7;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title" style="color: #a855f7;">Saved Prompts</h3>
+                    <p class="feature-description">Easily repeat AI's answers with a single tap, updated with your new ideas.</p>
                 </div>
             </div>
         </div>
