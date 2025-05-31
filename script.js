@@ -18,11 +18,11 @@ class ThemeManager {
     }
 
     getStoredTheme() {
-        return localStorage.getItem('voji-theme');
+        return localStorage.getItem('noeji-theme');
     }
 
     storeTheme(theme) {
-        localStorage.setItem('voji-theme', theme);
+        localStorage.setItem('noeji-theme', theme);
     }
 
     applyTheme(theme) {
@@ -245,7 +245,7 @@ class FormManager {
             await this.submitToWaitlist(emailInput.value);
             
             // Success
-            this.showMessage(form, 'Thanks for joining! We\'ll email you when Voji launches.', 'success');
+            this.showMessage(form, 'Thanks for joining! We\'ll email you when Noeji launches.', 'success');
             emailInput.value = '';
             
             // Track conversion (placeholder for analytics)
@@ -273,10 +273,10 @@ class FormManager {
         await new Promise(resolve => setTimeout(resolve, 1000));
         
         // For now, just store in localStorage for demo purposes
-        const waitlistEmails = JSON.parse(localStorage.getItem('voji-waitlist') || '[]');
+        const waitlistEmails = JSON.parse(localStorage.getItem('noeji-waitlist') || '[]');
         if (!waitlistEmails.includes(email)) {
             waitlistEmails.push(email);
-            localStorage.setItem('voji-waitlist', JSON.stringify(waitlistEmails));
+            localStorage.setItem('noeji-waitlist', JSON.stringify(waitlistEmails));
         }
         
         return { success: true };
@@ -674,7 +674,7 @@ function initAnalytics() {
     // Google Analytics 4 example
     if (typeof gtag !== 'undefined') {
         gtag('config', 'GA_MEASUREMENT_ID', {
-            page_title: 'Voji Landing Page',
+            page_title: 'Noeji Landing Page',
             page_location: window.location.href
         });
     }

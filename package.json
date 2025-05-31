@@ -4,9 +4,9 @@
     "prettier": "^3.5.3",
     "tailwindcss": "^4.1.8"
   },
-  "name": "vojiapp",
+  "name": "noejiapp",
   "version": "1.0.0",
-  "description": "A modern, responsive landing page for Voji - the voice-to-story AI app. Built with HTML5, CSS3 (Tailwind CSS), and vanilla JavaScript.",
+  "description": "A modern, responsive landing page for Noeji - the voice-to-story AI app. Built with HTML5, CSS3 (Tailwind CSS), and vanilla JavaScript.",
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

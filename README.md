@@ -1,10 +1,10 @@
-# Voji Landing Page
+# Noeji Landing Page
 
-A modern, responsive landing page for Voji - the voice-to-story AI app. Built with HTML5, CSS3 (Tailwind CSS), and vanilla JavaScript.
+A modern, responsive landing page for Noeji - the voice-to-story AI app. Built with HTML5, CSS3 (Tailwind CSS), and vanilla JavaScript.
 
 ## 🎯 Project Overview
 
-**Voji** is an innovative app that captures thoughts instantly with voice recording and uses AI to weave them into compelling stories. This landing page introduces the app, highlights its benefits, showcases features, presents pricing, and captures emails for a waitlist.
+**Noeji** is an innovative app that captures thoughts instantly with voice recording and uses AI to weave them into compelling stories. This landing page introduces the app, highlights its benefits, showcases features, presents pricing, and captures emails for a waitlist.
 
 ### Key Features
 
@@ -20,12 +20,12 @@ A modern, responsive landing page for Voji - the voice-to-story AI app. Built wi
 ## 🎨 Design System
 
 ### Color Palette
-- **voji-red**: `#e76f51`
-- **voji-orange**: `#f4a261`
-- **voji-yellow**: `#e9c46a`
-- **voji-green**: `#8ab17d`
-- **voji-blue**: `#2a9d8f` (Primary Accent)
-- **voji-purple**: `#264653` (Primary Text/Dark Theme Base)
+- **noeji-red**: `#e76f51`
+- **noeji-orange**: `#f4a261`
+- **noeji-yellow**: `#e9c46a`
+- **noeji-green**: `#8ab17d`
+- **noeji-blue**: `#2a9d8f` (Primary Accent)
+- **noeji-purple**: `#264653` (Primary Text/Dark Theme Base)
 
 ### Typography
 - **Pacifico**: Logo and brand text
@@ -33,14 +33,14 @@ A modern, responsive landing page for Voji - the voice-to-story AI app. Built wi
 - **Signika**: Hero headlines
 
 ### Themes
-- **Light Theme**: White/light gray background, voji-purple text
-- **Dark Theme**: voji-purple/dark background, white/light gray text
+- **Light Theme**: White/light gray background, noeji-purple text
+- **Dark Theme**: noeji-purple/dark background, white/light gray text
 - **System Theme**: Automatically follows user's system preference
 
 ## 📁 Project Structure
 
 ```
-vojiapp/
+noejiapp/
 ├── index.html          # Main HTML file
 ├── styles.css          # CSS styles and animations
 ├── script.js           # JavaScript functionality
@@ -59,7 +59,7 @@ vojiapp/
 1. **Clone or download the project files**
    ```bash
    git clone <repository-url>
-   cd vojiapp
+   cd noejiapp
    ```
 
 2. **Open the project**
@@ -136,7 +136,7 @@ Then open `http://localhost:8000` in your browser.
 3. **Effortless Capture**: Feature highlight with animation
 4. **AI Co-Pilot**: AI capabilities explanation with visualization
 5. **Use Cases**: Interactive cards showing different use scenarios
-6. **Why Voji**: Feature grid highlighting unique selling points
+6. **Why Noeji**: Feature grid highlighting unique selling points
 7. **Pricing**: Free vs Pro tier comparison
 8. **Visual Showcase**: App screenshot carousel
 9. **Final CTA**: Secondary waitlist form with app store badges
@@ -243,7 +243,7 @@ The current implementation stores emails in localStorage for demo purposes. For 
 
 ## 📝 License
 
-This project is created for Voji app. All rights reserved.
+This project is created for Noeji app. All rights reserved.
 
 ## 🤝 Contributing
 
@@ -255,4 +255,4 @@ For technical support or questions about the landing page, please reach out to t
 
 ---
 
-**Built with ❤️ for Voji - Ideas Spoken. Stories Born.** 
+**Built with ❤️ for Noeji - Ideas Spoken. Stories Born.** 

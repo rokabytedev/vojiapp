@@ -2,12 +2,12 @@
 
 @theme {
   /* Your custom theme extensions will go here as CSS variables */
-  --color-voji-red: #e76f51;
-  --color-voji-orange: #f4a261;
-  --color-voji-yellow: #e9c46a;
-  --color-voji-green: #8ab17d;
-  --color-voji-blue: #2a9d8f;
-  --color-voji-purple: #264653;
+  --color-noeji-red: #e76f51;
+  --color-noeji-orange: #f4a261;
+  --color-noeji-yellow: #e9c46a;
+  --color-noeji-green: #8ab17d;
+  --color-noeji-blue: #2a9d8f;
+  --color-noeji-purple: #264653;
 
   --font-pacifico: 'Pacifico', cursive;
   --font-afacad: 'Afacad', sans-serif;
@@ -21,7 +21,7 @@
 /* For example:
 @layer components {
   .my-custom-component {
-    @apply text-voji-red font-pacifico;
+    @apply text-noeji-red font-pacifico;
   }
 }
 */
