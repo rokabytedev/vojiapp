@@ -556,7 +556,7 @@ html {
     height: 100%;
     opacity: 0;
     transform: translateX(100%);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -566,6 +566,45 @@ html {
 .carousel-slide.active {
     opacity: 1;
     transform: translateX(0);
+}
+
+/* Forward navigation (next slide): current exits left, new enters from right */
+.carousel-slide.exiting-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel-slide.entering-from-right {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Backward navigation (previous slide): current exits right, new enters from left */
+.carousel-slide.exiting-right {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel-slide.entering-from-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Legacy classes for backward compatibility - remove these */
+.carousel-slide.exiting {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel-slide.entering {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .screenshot-mockup {

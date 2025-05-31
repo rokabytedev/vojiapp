@@ -344,13 +344,66 @@ class CarouselManager {
         this.setupTouchNavigation();
     }
 
-    showSlide(index) {
-        // Remove active class from all slides and dots
-        this.slides.forEach(slide => slide.classList.remove('active'));
-        this.dots.forEach(dot => dot.classList.remove('active'));
+    showSlide(index, direction = 'next') {
+        // Don't animate if it's the same slide
+        if (index === this.currentSlide) return;
 
-        // Add active class to current slide and dot
-        this.slides[index].classList.add('active');
+        const currentSlide = this.slides[this.currentSlide];
+        const nextSlide = this.slides[index];
+
+        // Determine animation classes based on direction
+        let exitClass, enterClass;
+        if (direction === 'next') {
+            // Forward: current exits left, new enters from right
+            exitClass = 'exiting-left';
+            enterClass = 'entering-from-right';
+        } else {
+            // Backward: current exits right, new enters from left
+            exitClass = 'exiting-right';
+            enterClass = 'entering-from-left';
+        }
+
+        // Clean up all animation classes from next slide first
+        nextSlide.classList.remove('active', 'exiting-left', 'exiting-right', 'entering-from-left', 'entering-from-right');
+        
+        // Set the initial position of the next slide (without transition)
+        nextSlide.style.transition = 'none';
+        if (direction === 'next') {
+            nextSlide.style.transform = 'translateX(100%)';
+            nextSlide.style.opacity = '0';
+        } else {
+            nextSlide.style.transform = 'translateX(-100%)';
+            nextSlide.style.opacity = '0';
+        }
+
+        // Force a reflow to ensure the position is set
+        nextSlide.offsetHeight;
+
+        // Re-enable transitions
+        nextSlide.style.transition = '';
+
+        // Start exit animation for current slide
+        if (currentSlide) {
+            currentSlide.classList.remove('active');
+            currentSlide.classList.add(exitClass);
+        }
+
+        // Start entrance animation for next slide
+        setTimeout(() => {
+            nextSlide.classList.add('active');
+            nextSlide.style.transform = '';
+            nextSlide.style.opacity = '';
+        }, 50);
+
+        // Clean up exiting slide after animation completes
+        setTimeout(() => {
+            if (currentSlide) {
+                currentSlide.classList.remove(exitClass);
+            }
+        }, 650);
+
+        // Update dots
+        this.dots.forEach(dot => dot.classList.remove('active'));
         this.dots[index].classList.add('active');
 
         this.currentSlide = index;
@@ -358,12 +411,12 @@ class CarouselManager {
 
     nextSlide() {
         const nextIndex = (this.currentSlide + 1) % this.slides.length;
-        this.showSlide(nextIndex);
+        this.showSlide(nextIndex, 'next');
     }
 
     prevSlide() {
         const prevIndex = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
-        this.showSlide(prevIndex);
+        this.showSlide(prevIndex, 'prev');
     }
 
     setupAutoPlay() {
@@ -394,7 +447,9 @@ class CarouselManager {
     setupDotNavigation() {
         this.dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
-                this.showSlide(index);
+                // Determine direction based on slide position
+                const direction = index > this.currentSlide ? 'next' : 'prev';
+                this.showSlide(index, direction);
                 this.stopAutoPlay();
                 // Restart autoplay after user interaction
                 setTimeout(() => this.startAutoPlay(), 2000);
@@ -462,7 +517,10 @@ function scrollToWaitlist() {
 // Global function for carousel (called from HTML)
 function showSlide(index) {
     if (window.carouselManager) {
-        window.carouselManager.showSlide(index);
+        // Determine direction based on slide position
+        const currentIndex = window.carouselManager.currentSlide;
+        const direction = index > currentIndex ? 'next' : 'prev';
+        window.carouselManager.showSlide(index, direction);
     }
 }
 
