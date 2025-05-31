@@ -35,7 +35,7 @@
                 <div class="hidden lg:flex items-center space-x-8">
                     <a href="#effortless-capture" class="nav-link">Why Voji?</a>
                     <a href="#features" class="nav-link">Features</a>
-                    <a href="#use-cases" class="nav-link">Use Cases</a>
+                    <a href="#showcase" class="nav-link">Use Cases</a>
                     <a href="#pricing" class="nav-link">Pricing</a>
                     <button id="theme-toggle" class="p-2 rounded-lg transition-colors cursor-pointer">
                         <svg id="theme-icon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -81,9 +81,9 @@
             </div>
             <!-- Menu Links Container -->
             <div class="flex-1 flex flex-col justify-start pt-8 space-y-8 px-8">
-                <a href="#why-voji" class="mobile-nav-link">Why Voji?</a>
-                <a href="#showcase" class="mobile-nav-link">Features</a>
-                <a href="#use-cases" class="mobile-nav-link">Use Cases</a>
+                <a href="#effortless-capture" class="mobile-nav-link">Why Voji?</a>
+                <a href="#features" class="mobile-nav-link">Features</a>
+                <a href="#showcase" class="mobile-nav-link">Use Cases</a>
                 <a href="#pricing" class="mobile-nav-link">Pricing</a>
             </div>
         </div>
@@ -295,48 +295,61 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2
                 class="text-4xl lg:text-5xl font-bold text-center text-voji-purple dark:text-white mb-16 animate-on-scroll">
-                Beautifully Simple. Powerfully Smart.
+                Voji may help you with...
             </h2>
             <div class="showcase-carousel animate-on-scroll">
                 <div class="carousel-container">
                     <div class="carousel-slide active">
                         <div class="screenshot-mockup">
                             <div class="screenshot-content ideabook-list">
-                                <div class="ideabook-item" style="background-color: #e76f51;">Personal Thoughts</div>
-                                <div class="ideabook-item" style="background-color: #8ab17d;">Project Ideas</div>
-                                <div class="ideabook-item" style="background-color: #2a9d8f;">Travel Plans</div>
+                                <div class="ideabook-item" style="background-color: #e9c46a;">📖 Personal Diary</div>
+                                <div class="ideabook-item" style="background-color: #e76f51;">Today's Thoughts</div>
+                                <div class="ideabook-item" style="background-color: #8ab17d;">Daily Reflections</div>
                             </div>
                         </div>
-                        <p class="screenshot-caption">Organize with vibrant AI-suggested colors.</p>
+                        <div class="use-case-content">
+                            <h3 class="text-2xl font-bold mb-4" style="color: #e9c46a;">📖 Personal Diary</h3>
+                            <p class="screenshot-caption">Speak your mind throughout the day. At night, let Voji craft your daily story.</p>
+                        </div>
                     </div>
                     <div class="carousel-slide">
                         <div class="screenshot-mockup">
                             <div class="screenshot-content ideas-tab">
-                                <div class="idea-entry">💡 App idea for voice notes</div>
-                                <div class="idea-entry">🎵 Song lyrics about technology</div>
-                                <div class="idea-entry">📝 Blog post on AI creativity</div>
+                                <div class="idea-entry">🧳 Flight BA 204 - 2:30 PM</div>
+                                <div class="idea-entry">🏨 Hotel Grand Plaza - Check-in 4 PM</div>
+                                <div class="idea-entry">🗺️ Visit museum tomorrow morning</div>
                             </div>
                         </div>
-                        <p class="screenshot-caption">All your thoughts, neatly captured.</p>
+                        <div class="use-case-content">
+                            <h3 class="text-2xl font-bold mb-4" style="color: #f4a261;">🧳 Travel Planning</h3>
+                            <p class="screenshot-caption">Track flight numbers, hotel addresses, and to-dos. Ask Voji for your daily itinerary.</p>
+                        </div>
                     </div>
                     <div class="carousel-slide">
                         <div class="screenshot-mockup">
                             <div class="screenshot-content chat-tab">
-                                <div class="chat-message user">Help me organize these ideas</div>
-                                <div class="chat-message ai">I can group them by theme and suggest next steps...</div>
+                                <div class="chat-message user">💡 App idea for voice notes</div>
+                                <div class="chat-message ai">🎵 Song lyrics about technology</div>
+                                <div class="chat-message user">📝 Blog post on AI creativity</div>
                             </div>
                         </div>
-                        <p class="screenshot-caption">Brainstorm and refine with your AI co-pilot.</p>
+                        <div class="use-case-content">
+                            <h3 class="text-2xl font-bold mb-4" style="color: #8ab17d;">💡 Ideas Brainstorming</h3>
+                            <p class="screenshot-caption">Collect every spark for your next masterpiece. Voji keeps it all organized.</p>
+                        </div>
                     </div>
                     <div class="carousel-slide">
                         <div class="screenshot-mockup">
                             <div class="screenshot-content notes-tab">
-                                <div class="saved-note">📋 Project roadmap generated by AI</div>
-                                <div class="saved-note">✨ Creative writing prompts</div>
-                                <div class="saved-note">🎯 Goal breakdown and action items</div>
+                                <div class="saved-note">🛒 Milk and eggs from grocery store</div>
+                                <div class="saved-note">🥖 Fresh bread from bakery</div>
+                                <div class="saved-note">🧄 Garlic and onions for dinner</div>
                             </div>
                         </div>
-                        <p class="screenshot-caption">Turn conversations into actionable notes.</p>
+                        <div class="use-case-content">
+                            <h3 class="text-2xl font-bold mb-4" style="color: #e76f51;">🛒 Shopping Lists</h3>
+                            <p class="screenshot-caption">Never forget an item again. Just say it, and Voji remembers it for your next trip.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-dots">
@@ -344,38 +357,6 @@
                     <button class="dot" onclick="showSlide(1)"></button>
                     <button class="dot" onclick="showSlide(2)"></button>
                     <button class="dot" onclick="showSlide(3)"></button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Use Cases Section -->
-    <section id="use-cases" class="py-20 bg-gray-50 dark:bg-gray-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2
-                class="text-4xl lg:text-5xl font-bold text-center text-voji-purple dark:text-white mb-16 animate-on-scroll">
-                How Will You Use Voji?
-            </h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="use-case-card animate-on-scroll" style="animation-delay: 0.1s">
-                    <div class="icon" style="color: #e9c46a;">📖</div>
-                    <h3>Personal Diary</h3>
-                    <p>Speak your mind throughout the day. At night, let Voji craft your daily story.</p>
-                </div>
-                <div class="use-case-card animate-on-scroll" style="animation-delay: 0.2s">
-                    <div class="icon" style="color: #f4a261;">🧳</div>
-                    <h3>Travel Planning</h3>
-                    <p>Track flight numbers, hotel addresses, and to-dos. Ask Voji for your daily itinerary.</p>
-                </div>
-                <div class="use-case-card animate-on-scroll" style="animation-delay: 0.3s">
-                    <div class="icon" style="color: #8ab17d;">💡</div>
-                    <h3>Ideas brainstorming</h3>
-                    <p>Collect every spark for your next masterpiece. Voji keeps it all organized.</p>
-                </div>
-                <div class="use-case-card animate-on-scroll" style="animation-delay: 0.4s">
-                    <div class="icon" style="color: #e76f51;">🛒</div>
-                    <h3>Shopping Lists</h3>
-                    <p>Never forget an item again. Just say it, and Voji remembers it for your next trip.</p>
                 </div>
             </div>
         </div>

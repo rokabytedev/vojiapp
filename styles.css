@@ -609,7 +609,19 @@ html {
 }
 
 .screenshot-caption {
-    @apply text-center text-gray-700 dark:text-gray-200 font-medium;
+    @apply text-lg text-gray-600 dark:text-gray-300 text-center;
+}
+
+.use-case-content {
+    @apply mt-6 text-center space-y-2;
+}
+
+.use-case-content h3 {
+    @apply font-bold;
+}
+
+.use-case-content p {
+    @apply text-lg text-gray-600 dark:text-gray-300;
 }
 
 .carousel-dots {
