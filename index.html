@@ -29,7 +29,9 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0">
                     <a href="#hero">
-                        <h1 class="font-pacifico text-2xl lg:text-3xl text-voji-blue dark:text-voji-yellow cursor-pointer hover:opacity-80 transition-opacity duration-200">Voji</h1>
+                        <h1
+                            class="font-pacifico text-2xl lg:text-3xl text-voji-blue dark:text-voji-yellow cursor-pointer hover:opacity-80 transition-opacity duration-200">
+                            Voji</h1>
                     </a>
                 </div>
 
@@ -60,7 +62,9 @@
         <div class="flex flex-col h-full">
             <div class="flex justify-between items-center p-4">
                 <a href="#hero">
-                    <h1 class="font-pacifico text-2xl text-voji-blue dark:text-voji-yellow cursor-pointer hover:opacity-80 transition-opacity duration-200">Voji</h1>
+                    <h1
+                        class="font-pacifico text-2xl text-voji-blue dark:text-voji-yellow cursor-pointer hover:opacity-80 transition-opacity duration-200">
+                        Voji</h1>
                 </a>
                 <button id="mobile-menu-close" class="p-2">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -91,13 +95,13 @@
                         Ideas Spoken.<br>Stories Born.
                     </h1>
                     <p class="text-xl sm:text-2xl text-voji-purple dark:text-white leading-relaxed">
-                        Voji is not just another note taker. Simplicity is at the core.<br>
+                        Voji is not just another note taker. Simplicity is at the core.
                         Tap, speak and let AI organize (so you don't have to).
                     </p>
 
                     <!-- Get Voji Section -->
                     <div class="mt-8 space-y-6 text-left">
-                        <div class="flex flex-row justify-start space-x-4">
+                        <div class="flex flex-row justify-center lg:justify-start space-x-4">
                             <a href="#" class="inline-block">
                                 <img src="assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
                                     alt="Download on the App Store" class="h-12 sm:h-14">
@@ -113,8 +117,7 @@
                 <!-- Device Mockup -->
                 <div class="flex justify-center lg:justify-end animate-slide-in-right">
                     <div class="max-w-lg w-full">
-                        <img src="assets/hero.png" alt="Voji App Hero" 
-                             class="w-full h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-shadow duration-300">
+                        <img src="assets/hero.png" alt="Voji App Hero" class="w-full h-auto">
                     </div>
                 </div>
             </div>
@@ -125,7 +128,8 @@
     <section id="effortless-capture" class="py-20 bg-gray-50 dark:bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="animate-on-scroll flex justify-center items-center">
+                <!-- Image Column: order-2 by default (mobile), lg:order-1 on large screens -->
+                <div class="animate-on-scroll flex justify-center items-center order-2 lg:order-1">
                     <div
                         class="bg-white dark:bg-gray-800 shadow-xl hover:shadow-2xl transition-shadow duration-300 hero-card">
                         <img src="assets/ideabooks.jpg" data-dark-src="assets/ideabooks_dark.jpg"
@@ -133,7 +137,8 @@
                             class="w-full h-auto hero-card-image theme-switchable-image">
                     </div>
                 </div>
-                <div class="space-y-6 animate-on-scroll">
+                <!-- Text Column: order-1 by default (mobile), lg:order-2 on large screens -->
+                <div class="space-y-6 animate-on-scroll order-1 lg:order-2">
                     <h2 class="text-4xl lg:text-5xl font-bold text-voji-purple dark:text-white">
                         Tap, speak. That simple.
                     </h2>
@@ -417,7 +422,7 @@
 
                 <!-- App Store Badges -->
                 <div class="flex justify-center space-x-4 mt-8">
-                    <div class="flex flex-row justify-start space-x-4">
+                    <div class="flex flex-row justify-center lg:justify-start space-x-4">
                         <a href="#" class="inline-block">
                             <img src="assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
                                 alt="Download on the App Store" class="h-12 sm:h-14">
