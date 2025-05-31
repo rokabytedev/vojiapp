@@ -569,12 +569,27 @@ html {
 }
 
 .screenshot-mockup {
-    width: 250px;
     height: 450px;
-    background: #1a1a1a;
-    border: 6px solid #333;
+    background: white;
+    box-shadow: 0 10px 25px -8px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
     position: relative;
     margin-bottom: 20px;
+    max-width: 300px;
+    margin: 0 auto 20px auto;
+}
+
+.screenshot-mockup:hover {
+    box-shadow: 0 15px 35px -8px rgba(0, 0, 0, 0.2);
+}
+
+.dark .screenshot-mockup {
+    background: #374151;
+    box-shadow: 0 10px 25px -8px rgba(255, 255, 255, 0.15);
+}
+
+.dark .screenshot-mockup:hover {
+    box-shadow: 0 15px 35px -8px rgba(255, 255, 255, 0.2);
 }
 
 .screenshot-content {
@@ -872,7 +887,8 @@ a:focus {
 
     .use-case-card,
     .pricing-card,
-    .chat-mockup {
+    .chat-mockup,
+    .screenshot-mockup {
         border: 2px solid currentColor;
     }
 }
