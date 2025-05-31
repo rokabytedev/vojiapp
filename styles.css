@@ -368,26 +368,30 @@ html {
 }
 
 .chat-message {
-    margin-bottom: 15px;
     padding: 10px;
+    margin-bottom: 8px;
     font-size: 14px;
-    line-height: 1.4;
+    text-align: center !important;
+    width: 100%;
+    display: block;
 }
 
 .chat-message.user {
-    background: #f3f4f6;
-    color: #374151;
-    text-align: right;
+    background: #e5f3ff;
+    color: #1565c0;
+    text-align: center !important;
 }
 
 .dark .chat-message.user {
-    background: #4b5563;
-    color: #f9fafb;
+    background: #1e40af;
+    color: #bfdbfe;
+    text-align: center !important;
 }
 
 .chat-message.ai {
-    background: var(--voji-blue);
-    color: white;
+    background: #f0f9ff;
+    color: #0369a1;
+    text-align: center !important;
 }
 
 /* Use Case Cards */
@@ -579,11 +583,17 @@ html {
     background: white;
     padding: 20px;
     overflow: hidden;
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .dark .screenshot-content {
     background: #374151;
     color: white;
+    text-align: center !important;
 }
 
 .ideabook-item {
@@ -591,6 +601,9 @@ html {
     margin-bottom: 10px;
     color: white;
     font-weight: 500;
+    text-align: center !important;
+    width: 100%;
+    display: block;
 }
 
 .idea-entry,
@@ -600,16 +613,21 @@ html {
     background: #f3f4f6;
     color: #374151;
     font-size: 14px;
+    text-align: center !important;
+    width: 100%;
+    display: block;
 }
 
 .dark .idea-entry,
 .dark .saved-note {
     background: #4b5563;
     color: #f9fafb;
+    text-align: center !important;
 }
 
 .screenshot-caption {
     @apply text-lg text-gray-600 dark:text-gray-300 text-center;
+    text-align: center !important;
 }
 
 .use-case-content {
@@ -618,10 +636,12 @@ html {
 
 .use-case-content h3 {
     @apply font-bold;
+    text-align: center !important;
 }
 
 .use-case-content p {
     @apply text-lg text-gray-600 dark:text-gray-300;
+    text-align: center !important;
 }
 
 .carousel-dots {
