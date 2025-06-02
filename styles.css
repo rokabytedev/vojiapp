@@ -83,14 +83,14 @@ html {
     /* Light theme: keep original black color (no filter) */
     transition: filter 0.3s ease;
     /* Force smaller size */
-    height: 36px !important;
-    max-height: 36px !important;
+    height: 38px !important;
+    max-height: 38px !important;
 }
 
 @media (min-width: 1024px) {
     .logo-filter {
-        height: 48px !important;
-        max-height: 48px !important;
+        height: 38px !important;
+        max-height: 38px !important;
     }
 }
 
