@@ -78,6 +78,27 @@ html {
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Logo Styling */
+.logo-filter {
+    /* Light theme: keep original black color (no filter) */
+    transition: filter 0.3s ease;
+    /* Force smaller size */
+    height: 36px !important;
+    max-height: 36px !important;
+}
+
+@media (min-width: 1024px) {
+    .logo-filter {
+        height: 48px !important;
+        max-height: 48px !important;
+    }
+}
+
+.dark .logo-filter {
+    /* Dark theme: change black to noeji-yellow (#e9c46a) */
+    filter: brightness(0) saturate(100%) invert(84%) sepia(35%) saturate(434%) hue-rotate(7deg) brightness(96%) contrast(90%);
+}
+
 .nav-link {
     @apply text-noeji-purple dark:text-white hover:text-noeji-blue dark:hover:text-noeji-yellow transition-colors font-medium;
 }
