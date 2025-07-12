@@ -1,15 +1,15 @@
 # Terms of Service for Noeji
 *Last Updated: May 31, 2025*
 
-Welcome to Noeji! These Terms of Service ("Terms") govern your access to and use of the Noeji mobile application, web application (when available), and any related services (collectively, the "Service") provided by RocketByte LLC ("RocketByte," "we," "us," or "our").
+Welcome to Noeji! These Terms of Service ("Terms") govern your access to and use of the Noeji mobile application, our website located at noeji.com ("Website"), and any related services (collectively, the "Service") provided by RocketByte LLC ("RocketByte," "we," "us," or "our").
 
-**PLEASE READ THESE TERMS CAREFULLY. BY CREATING AN ACCOUNT, ACCESSING, DOWNLOADING, INSTALLING, OR USING THE SERVICE, YOU AGREE TO BE BOUND BY THESE TERMS AND OUR PRIVACY POLICY (INCORPORATED HEREIN BY REFERENCE). IF YOU DO NOT AGREE TO ALL OF THESE TERMS, DO NOT ACCESS OR USE THE SERVICE.**
+**PLEASE READ THESE TERMS CAREFULLY. BY CREATING AN ACCOUNT, ACCESSING, BROWSING, DOWNLOADING, INSTALLING, OR USING THE SERVICE, YOU AGREE TO BE BOUND BY THESE TERMS AND OUR PRIVACY POLICY (INCORPORATED HEREIN BY REFERENCE). IF YOU DO NOT AGREE TO ALL OF THESE TERMS, DO NOT ACCESS OR USE THE SERVICE.**
 
 ## 1. Acceptance of Terms
 By accessing or using Noeji, you confirm that you are at least **18 years of age** and have the legal capacity to enter into these Terms. If you are accessing or using the Service on behalf of an entity, you represent and warrant that you have the authority to bind that entity to these Terms, and you still affirm you are 18 years of age or older. **The Service is not intended for and should not be used by individuals under the age of 18.**
 
 ## 2. Service Description
-Noeji is an AI/LLM-powered application (the "Service") designed to assist users with capturing, organizing, processing, and developing their ideas and information. The specific features, tools, and functionalities offered through the Service are dynamic and may be modified, added to, or removed at RocketByte's sole discretion as the Service evolves. The Service utilizes artificial intelligence and relies on third-party AI models and cloud infrastructure to deliver its functionalities, as further detailed in Section 6 (Artificial Intelligence Features).
+Noeji is an AI/LLM-powered platform (the "Service") designed to assist users with capturing, organizing, processing, and developing their ideas and information. The specific features, tools, and functionalities offered through the Service are dynamic and may be modified, added to, or removed at RocketByte's sole discretion as the Service evolves. The Service utilizes artificial intelligence and relies on third-party AI models and cloud infrastructure to deliver its functionalities, as further detailed in Section 6 (Artificial Intelligence Features).
 
 ## 3. Account Registration and Security
 ### Account Creation
@@ -21,7 +21,7 @@ Noeji allows you to set a passcode to lock ideabooks. This passcode is not store
 
 ## 4. User Tiers and Subscriptions
 Noeji offers different tiers of service:
-- **Free Tier:** Access to basic features with usage limitations as described within the App.
+- **Free Tier:** Access to basic features with usage limitations as described within the Service.
 - **Pro Tier (Subscription):** Access to enhanced features and higher usage limits. Pro Tier requires a paid subscription, available on a monthly or annual basis.
     - **Billing:** Subscription fees are billed in advance on a recurring basis through the Apple App Store or Google Play Store, managed via RevenueCat. You authorize the respective app store to charge your selected payment method.
     - **Auto-Renewal:** Your Pro subscription will automatically renew at the end of each billing cycle unless you cancel it through your app store account settings before the renewal date.

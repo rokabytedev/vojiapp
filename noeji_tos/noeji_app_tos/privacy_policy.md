@@ -2,7 +2,7 @@
 
 **Last Updated:** May 31, 2025
 
-RocketByte LLC ("RocketByte," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Noeji mobile application, web application (when available), and related services (collectively, the "Service").
+RocketByte LLC ("RocketByte," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Noeji mobile application, our website located at noeji.com ("Website"), and related services (collectively, the "Service").
 
 Please read this Privacy Policy carefully. **BY ACCESSING OR USING THE SERVICE, YOU AGREE TO THE TERMS OF THIS PRIVACY POLICY. IF YOU DO NOT AGREE, DO NOT ACCESS OR USE THE SERVICE.**
 
@@ -22,9 +22,9 @@ In the course of providing the Service, we may collect various types of informat
 
 ### (B) Information We Collect Automatically:
 
-*   **Usage Data:** We automatically collect information about your interactions with the Service using Firebase Analytics and other tools. This includes features you use, actions you take (e.g., creating an ideabook, saving a note, chat message counts), ideabook color selections, sort order preferences, theme selection, filter settings, timestamps, and frequency of use. This may include aggregated data about the length of audio recordings or the number of words in ideabook names or ideas for the purpose of enforcing limits and improving the service.
-*   **Device and Technical Information:** We collect information about the device you use to access the Service, such as your device model, operating system and version, app version, IP address (which may be used to infer general location), device identifiers, and crash data.
-*   **Location Information:** With your permission (if requested by the app and if you enable location services for the App), we may collect your device's precise or approximate location to optimize results or provide location-based features. You can typically disable location services through your device settings.
+*   **Usage Data:** We automatically collect information about your interactions with the Service using Firebase Analytics and other tools. This includes features you use, pages you view on our Website, actions you take (e.g., creating an ideabook, saving a note, chat message counts), ideabook color selections, sort order preferences, theme selection, filter settings, timestamps, and frequency of use. This may include aggregated data about the length of audio recordings or the number of words in ideabook names or ideas for the purpose of enforcing limits and improving the service.
+*   **Device and Technical Information:** We collect information about the device or browser you use to access the Service, such as your device model, operating system and version, browser type, app version, IP address (which may be used to infer approximate geographic location), device identifiers, and crash data.
+*   **Location Information:** With your permission (if requested by the Service and if you enable location services for the App), we may collect your device's precise or approximate location to optimize results or provide location-based features. You can typically disable location services through your device settings. (Note: This is separate from the approximate location inferred from your IP address for general analytics purposes).
 *   **Chat History (Local Storage):** Your chat history with the LLM for each ideabook is stored locally on your device. It is not synced to the cloud and is lost if you switch devices or reinstall the app without a backup. While stored locally, if you engage in chat, the individual messages (your prompts and AI responses) are processed by our servers and third-party AI providers, who may have their own data retention policies for such processed data as outlined in their respective terms and privacy policies.
 
 ### (C) Information from Third Parties:
@@ -64,7 +64,7 @@ We may share your information in the following situations:
     *   Detect, prevent, or otherwise address fraud, security, or technical issues.
     *   Protect the rights, property, or safety of RocketByte, our users, or the public as required or permitted by law.
 *   **Business Transfers:** In connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business by another company, your information may be transferred as part of that transaction. We will use reasonable efforts to notify you via email and/or a prominent notice on our Service of any change in ownership or uses of your personal information, as well as any choices you may have.
-*   **Aggregated or Anonymized Data:** We may share aggregated or anonymized information that does not directly identify you for research, analysis, or other purposes. For example, we may share statistics about app usage.
+*   **Aggregated or Anonymized Data:** We may share aggregated or anonymized information that does not directly identify you for research, analysis, or other purposes. For example, we may share statistics about Service usage.
 *   **With Your Consent:** We may share your information for other purposes with your explicit consent.
 
 We do not sell your personal information. Noeji does not currently display third-party advertisements. If this changes, we will update this Privacy Policy.
