@@ -1,5 +1,5 @@
 # Terms of Service for Noeji
-*Last Updated: May 31, 2025*
+*Last Updated: July 15, 2025*
 
 Welcome to Noeji! These Terms of Service ("Terms") govern your access to and use of the Noeji mobile application, our website located at noeji.com ("Website"), and any related services (collectively, the "Service") provided by RocketByte LLC ("RocketByte," "we," "us," or "our").
 
