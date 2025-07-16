@@ -1,6 +1,6 @@
 # Privacy Policy for Noeji
 
-**Last Updated:** May 31, 2025
+**Last Updated:** July 15, 2025
 
 RocketByte LLC ("RocketByte," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Noeji mobile application, our website located at noeji.com ("Website"), and related services (collectively, the "Service").
 
