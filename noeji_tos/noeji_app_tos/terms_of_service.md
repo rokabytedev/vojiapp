@@ -5,13 +5,21 @@ Welcome to Noeji! These Terms of Service ("Terms") govern your access to and use
 
 **PLEASE READ THESE TERMS CAREFULLY. BY CREATING AN ACCOUNT, ACCESSING, BROWSING, DOWNLOADING, INSTALLING, OR USING THE SERVICE, YOU AGREE TO BE BOUND BY THESE TERMS AND OUR PRIVACY POLICY (INCORPORATED HEREIN BY REFERENCE). IF YOU DO NOT AGREE TO ALL OF THESE TERMS, DO NOT ACCESS OR USE THE SERVICE.**
 
+**YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT USE OF THE SERVICE IS AT YOUR SOLE RISK AND THAT THE ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY, AND EFFORT IS WITH YOU.**
+
 ## 1. Acceptance of Terms
 By accessing or using Noeji, you confirm that you are at least **18 years of age** and have the legal capacity to enter into these Terms. If you are accessing or using the Service on behalf of an entity, you represent and warrant that you have the authority to bind that entity to these Terms, and you still affirm you are 18 years of age or older. **The Service is not intended for and should not be used by individuals under the age of 18.**
 
-## 2. Service Description
+## 2. License to Use the Service
+### Scope of License
+The Service is licensed, not sold, to you. Subject to your compliance with these Terms, RocketByte grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to download, install, and use the Service for your personal, non-commercial use on any compatible device that you own or control.
+### License Restrictions
+Except as expressly permitted in these Terms, you may not: (i) distribute or make the Service available over a network where it could be used by multiple devices at the same time; (ii) transfer, redistribute or sublicense the Service; (iii) copy, reverse-engineer, disassemble, attempt to derive the source code of, modify, or create derivative works of the Service, any updates, or any part thereof (except as and only to the extent that any foregoing restriction is prohibited by applicable law). If you sell a device on which the Service is installed, you must remove the Service from the device before doing so. RocketByte reserves all rights in and to the Service not expressly granted to you under these Terms.
+
+## 3. Service Description
 Noeji is an AI/LLM-powered platform (the "Service") designed to assist users with capturing, organizing, processing, and developing their ideas and information. The specific features, tools, and functionalities offered through the Service are dynamic and may be modified, added to, or removed at RocketByte's sole discretion as the Service evolves. The Service utilizes artificial intelligence and relies on third-party AI models and cloud infrastructure to deliver its functionalities, as further detailed in Section 6 (Artificial Intelligence Features).
 
-## 3. Account Registration and Security
+## 4. Account Registration and Security
 ### Account Creation
 To use most features of Noeji, you must register for an account using Google Sign-In or Apple Sign-In. You agree to provide accurate, current, and complete information during the registration process.
 ### Account Responsibility
@@ -19,7 +27,7 @@ You are responsible for safeguarding your account credentials, including any pas
 ### Passcode
 Noeji allows you to set a passcode to lock ideabooks. This passcode is not stored by Noeji in a recoverable format. An encrypted fingerprint of the passcode is stored to allow verification across multiple devices. **YOU ARE SOLELY RESPONSIBLE FOR REMEMBERING YOUR PASSCODE. ROCKETBYTE CANNOT RETRIEVE OR RESET YOUR PASSCODE IF YOU FORGET IT. LOSS OF YOUR PASSCODE MAY RESULT IN PERMANENT LOSS OF ACCESS TO YOUR LOCKED IDEABOOKS.**
 
-## 4. User Tiers and Subscriptions
+## 5. User Tiers and Subscriptions
 Noeji offers different tiers of service:
 - **Free Tier:** Access to basic features with usage limitations as described within the Service.
 - **Pro Tier (Subscription):** Access to enhanced features and higher usage limits. Pro Tier requires a paid subscription, available on a monthly or annual basis.
@@ -30,7 +38,7 @@ Noeji offers different tiers of service:
     - **No Refunds:** Subscription fees are non-refundable, except as required by applicable law or as determined by Apple or Google's refund policies. No refunds or credits will be provided for partial subscription periods, unused service, or if your account is terminated due to a violation of these Terms. This no-refund policy applies to the maximum extent permitted by applicable law.
     - **Promotions:** We may offer promotional discounts. Any specific terms related to promotions will be disclosed at the time of the offer.
 
-## 5. User Content and Intellectual Property
+## 6. User Content and Intellectual Property
 ### Your Content
 You retain ownership of the ideas, text, voice recordings, and other content you create, input, or upload to Noeji ("User Content").
 #### User Warranties:
@@ -51,7 +59,7 @@ The Service, including its "look and feel" (e.g., text, graphics, images, logos)
 ### Feedback
 If you provide us with any feedback, suggestions, or ideas regarding the Service ("Feedback"), you grant RocketByte an unrestricted, perpetual, irrevocable, non-exclusive, fully-paid, royalty-free right to use the Feedback in any manner and for any purpose, including to improve the Service and create other products and services.
 
-## 6. Artificial Intelligence Features
+## 7. Artificial Intelligence Features
 The Service incorporates artificial intelligence ("AI") and large language model ("LLM") technologies, often from third-party providers, to offer various features. You acknowledge and agree to the following:
 - **Nature of AI:** AI and LLM technologies are experimental and constantly evolving. The performance, capabilities, accuracy, and limitations of AI features within the Service may change over time, sometimes without notice.
 - **AI-Generated Content:**
@@ -68,7 +76,7 @@ The Service incorporates artificial intelligence ("AI") and large language model
     - **Terms Subject to Change and Your Responsibility:** These third-party terms are subject to change by Google at any time, and RocketByte does not control and is not responsible for the practices or terms of Google or any other third-party AI provider. We encourage you to review their terms and policies directly and regularly.
     - **Future Providers:** If we integrate other key third-party AI providers for core functionalities in the future, we will endeavor to update this section or direct you to our Privacy Policy for such information.
 
-## 7. Acceptable Use and Prohibited Conduct
+## 8. Acceptable Use and Prohibited Conduct
 You agree not to:
 - Use the Service for any illegal or unauthorized purpose, or in violation of any applicable laws (including but not limited to copyright, privacy, and export control laws).
 - Input, upload, generate, or share any User Content that is unlawful, harmful, threatening, abusive, harassing, defamatory, vulgar, obscene, libelous, invasive of another's privacy, hateful, or racially, ethnically, or otherwise objectionable.
@@ -85,7 +93,7 @@ You agree not to:
 - Use the Service to generate spam, unsolicited messages, or content that promotes harmful activities or disinformation.
 - Engage in any other conduct that RocketByte, in its sole discretion, deems to be disruptive, harmful, or otherwise in violation of these Terms or the spirit of the Service.
 
-## 8. Third-Party Services and Content (Non-AI)
+## 9. Third-Party Services and Content (Non-AI)
 Beyond the AI providers covered in Section 6 and detailed in our Privacy Policy, Noeji may integrate with or rely on other third-party services, including but not limited to:
 - Cloud hosting and database services (e.g., Firebase).
 - Authentication services (Google Sign-In, Apple Sign-In).
@@ -93,16 +101,16 @@ Beyond the AI providers covered in Section 6 and detailed in our Privacy Policy,
 
 Your use of these third-party services is at your own risk and may be subject to their respective terms and privacy policies. RocketByte is not responsible for the practices, content, or availability of these third-party services.
 
-## 9. Service Availability and Maintenance
+## 10. Service Availability and Maintenance
 RocketByte will use reasonable efforts to keep the Service operational. However, you acknowledge and agree that the Service may be subject to temporary interruptions or periods of unavailability due to maintenance (whether scheduled or emergency), repairs, updates, upgrades, network or equipment failures, or other causes beyond or within our reasonable control.
 We reserve the right to suspend, discontinue, modify, or limit access to the Service or any part of it, with or without notice, at any time and for any reason, including but not limited to, for conducting maintenance, implementing updates or upgrades, addressing security concerns, or improving the Service. You agree that RocketByte will not be liable to you or to any third party for any modification, suspension, discontinuance, or limitation of the Service, or any loss of data or User Content resulting therefrom, except as may be expressly agreed by RocketByte in writing or as strictly required by applicable law.
 Generally, no refunds or credits will be offered for any Service interruptions, downtime, or unavailability, including those resulting from maintenance, technical issues, or Service modifications. This applies whether such interruptions are scheduled or unscheduled, and regardless of their duration, to the maximum extent permitted by applicable law.
 Notwithstanding the foregoing, for paying Pro Tier subscribers, in the event of a significant, prolonged, and material paid-service interruption that is directly and solely attributable to RocketByte's fault (and not due to factors outside our reasonable control, your actions, or third-party service failures impacting the broader internet or our essential suppliers), RocketByte may, at its sole discretion, consider providing a pro-rata credit or refund for the unused portion of the affected subscription period. Any such consideration will be determined on a case-by-case basis. Nothing in this section shall be deemed to limit any mandatory refund rights you may have under applicable consumer protection laws or the policies of the app store through which you subscribed (e.g., Apple App Store, Google Play Store), which will take precedence if they provide greater rights.
 
-## 10. Abuse Detection and Service Discontinuation
+## 11. Abuse Detection and Service Discontinuation
 RocketByte monitors for abuse of the Service. We reserve the right to investigate suspected violations of these Terms. We may suspend or terminate your access to the Service immediately, without prior notice or liability, if we determine, in our sole discretion, that you have violated these Terms, abused the Service, or engaged in any conduct that we deem harmful to the Service, other users, or our interests.
 
-## 11. Account Deactivation and Data Deletion
+## 12. Account Deactivation and Data Deletion
 ### Inactive Accounts
 RocketByte reserves the right to deactivate and delete accounts that have been inactive for a continuous period of twelve (12) months. An account is deemed inactive if you have not logged in during that period. We will attempt to notify you via your registered email address at least thirty (30) days before deleting an inactive account.
 ### Termination by You
@@ -112,8 +120,8 @@ Upon termination, your right to use the Service and all licenses granted to you 
 ### Survival
 Provisions of these Terms that by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.
 
-## 12. Disclaimers of Warranties
-THE SERVICE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT ANY WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND ANY WARRANTIES ARISING OUT OF COURSE OF DEALING OR USAGE OF TRADE.
+## 13. Disclaimers of Warranties
+THE SERVICE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITH ALL FAULTS AND WITHOUT ANY WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, QUIET ENJOYMENT, NON-INFRINGEMENT, AND ANY WARRANTIES ARISING OUT OF COURSE OF DEALING OR USAGE OF TRADE.
 
 ROCKETBYTE DOES NOT WARRANT THAT:
 
@@ -127,7 +135,7 @@ NOEJI IS NOT A BACKUP SERVICE. YOU ARE RESPONSIBLE FOR MAINTAINING YOUR OWN BACK
 
 THE SERVICE IS NOT INTENDED FOR USE IN OR IN CONNECTION WITH ANY HIGH-RISK ACTIVITIES OR ENVIRONMENTS REQUIRING FAIL-SAFE PERFORMANCE, SUCH AS IN THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, DIRECT LIFE SUPPORT MACHINES, OR WEAPONS SYSTEMS, IN WHICH THE FAILURE OF THE SERVICE COULD LEAD DIRECTLY TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE ("HIGH-RISK ACTIVITIES"). YOU AGREE NOT TO USE THE SERVICE FOR OR IN CONNECTION WITH ANY HIGH-RISK ACTIVITIES.
 
-## 13. Limitation of Liability
+## 14. Limitation of Liability
 TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL ROCKETBYTE LLC, ITS AFFILIATES, DIRECTORS, EMPLOYEES, AGENTS, SUPPLIERS, OR LICENSORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES, INCLUDING BUT NOT LIMITED TO, DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA, OR OTHER INTANGIBLE LOSSES (EVEN IF ROCKETBYTE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES), RESULTING FROM:
 
 A. YOUR ACCESS TO OR USE OF OR INABILITY TO ACCESS OR USE THE SERVICE;
@@ -140,10 +148,10 @@ IN NO EVENT SHALL ROCKETBYTE'S AGGREGATE LIABILITY FOR ALL CLAIMS RELATING TO TH
 
 SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES OR THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES. ACCORDINGLY, SOME OF THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU.
 
-## 14. Indemnification
+## 15. Indemnification
 You agree to defend, indemnify, and hold harmless RocketByte LLC and its affiliates, directors, officers, employees, and agents from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees) arising from: (a) your use of and access to the Service; (b) your violation of any term of these Terms; (c) your violation of any third-party right, including without limitation any copyright, property, or privacy right; (d) any claim that your User Content caused damage to a third party or infringed any third party's intellectual property rights; or (e) your use of AI-Generated Content in violation of these Terms or applicable law. This defense and indemnification obligation will survive these Terms and your use of the Service.
 
-## 15. Governing Law and Dispute Resolution
+## 16. Governing Law and Dispute Resolution
 These Terms shall be governed by and construed in accordance with the laws of the State of California, United States, without regard to its conflict of law principles.
 
 Any dispute, claim, or controversy arising out of or relating to these Terms or the breach, termination, enforcement, interpretation, or validity thereof, including the determination of the scope or applicability of this agreement to arbitrate, shall be determined by arbitration in San Jose, California, before one arbitrator. The arbitration shall be administered by JAMS pursuant to its Comprehensive Arbitration Rules and Procedures. Judgment on the Award may be entered in any court having jurisdiction. This clause shall not preclude parties from seeking provisional remedies in aid of arbitration from a court of appropriate jurisdiction.
@@ -152,13 +160,19 @@ Any dispute, claim, or controversy arising out of or relating to these Terms or 
 
 You agree that regardless of any statute or law to the contrary, any claim or cause of action arising out of or related to use of the Service or these Terms must be filed within one (1) year after such claim or cause of action arose or be forever barred.
 
-## 16. U.S. Government Restricted Rights
+## 17. U.S. Government Restricted Rights
 If you are a U.S. government entity, our Service is provided with "RESTRICTED RIGHTS." Use, duplication, or disclosure by the U.S. government is subject to restrictions as set forth in FAR 52.227-19 (Commercial Computer Software - Restricted Rights) and DFARS 227.7202 (Rights in Commercial Computer Software or Commercial Computer Software Documentation).
 
-## 17. Changes to Terms
+## 18. Export Compliance and Restrictions
+You acknowledge and agree that your use of the Service is subject to all applicable export and re-export control laws and regulations, including those of the United States and the jurisdiction from which you access the Service. You are solely responsible for complying with these laws.
+In particular, you must not export or re-export the Service to (a) any country or territory subject to a U.S. Government embargo, or (b) any individual or entity on the U.S. Treasury Department’s Specially Designated Nationals List or the U.S. Department of Commerce’s Denied Persons or Entity Lists.
+By using the Service, you affirmatively represent and warrant that you are not located in any such embargoed country and that your name does not appear on any such government list of restricted parties.
+Furthermore, you agree that you will not use the Service for any purpose prohibited by United States law, including but not limited to the development, design, manufacture, or production of nuclear, missile, chemical, or biological weapons.
+
+## 19. Changes to Terms
 RocketByte reserves the right, at its sole discretion, to modify or replace these Terms at any time. If we make changes we determine to be material, we will endeavor to notify you before such changes become effective. Notification methods may include updating the "Last Updated" date at the top of these Terms, providing notice through the Service (such as a pop-up or announcement), or, where we deem it appropriate for significant changes or if required by applicable law, by sending a notification to your registered email address. The timing and method of notice will be at our reasonable discretion, taking into account the nature of the changes and applicable legal requirements. It is your responsibility to review these Terms periodically for changes. By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms.
 
-## 18. Miscellaneous
+## 20. Miscellaneous
 - **Entire Agreement:** These Terms, together with the Privacy Policy, constitute the entire agreement between you and RocketByte concerning the Service and supersede all prior or contemporaneous communications and proposals (whether oral, written, or electronic).
 - **Severability:** If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary so that these Terms will otherwise remain in full force and effect and enforceable.
 - **No Waiver:** No waiver of any term of these Terms shall be deemed a further or continuing waiver of such term or any other term, and RocketByte's failure to assert any right or provision under these Terms shall not constitute a waiver of such right or provision.
@@ -167,7 +181,7 @@ RocketByte reserves the right, at its sole discretion, to modify or replace thes
 - **Force Majeure:** RocketByte shall not be liable for any failure to perform its obligations hereunder where such failure results from any cause beyond RocketByte's reasonable control, including, without limitation, mechanical, electronic, or communications failure or degradation, acts of God, war, terrorism, riots, embargoes, acts of civil or military authorities, fire, floods, accidents, strikes, or shortages of transportation facilities, fuel, energy, labor, or materials.
 - **No Third-Party Beneficiaries:** Except as otherwise expressly provided in these Terms, there shall be no third-party beneficiaries to these Terms.
 
-## 19. Contact Us
+## 21. Contact Us
 If you have any questions about these Terms, please contact us at:
 
 RocketByte LLC
