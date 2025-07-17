@@ -210,4 +210,5 @@ If you access or download the Service from the Google Play Store, you agree to t
 If you have any questions about these Terms, please contact us at:
 
 RokaByte LLC
+
 Email: support@rokabyte.com
