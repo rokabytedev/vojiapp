@@ -2,7 +2,7 @@
 
 **Last Updated:** July 15, 2025
 
-RocketByte LLC ("RocketByte," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Noeji mobile application, our website located at noeji.com ("Website"), and related services (collectively, the "Service").
+RokaByte LLC ("RokaByte," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Noeji mobile application, our website located at noeji.com ("Website"), and related services (collectively, the "Service").
 
 Please read this Privacy Policy carefully. **BY ACCESSING OR USING THE SERVICE, YOU AGREE TO THE TERMS OF THIS PRIVACY POLICY. IF YOU DO NOT AGREE, DO NOT ACCESS OR USE THE SERVICE.**
 
@@ -16,7 +16,7 @@ In the course of providing the Service, we may collect various types of informat
 
 *   **Account Information:** When you register for an account, which may involve using third-party authentication providers (such as Google Sign-In or Apple Sign-In, or other providers we may support in the future), we receive certain profile information from these services or directly from you. This may include your name, email address, and profile picture, as permitted by your settings on those services, their privacy policies, or the information you provide during registration.
 *   **User Content:** We collect the content and information you create, input, upload, or store within Noeji. This includes, but is not limited to, text, transcribed audio, information you organize into various structures within the app, prompts you provide to AI features, and any other materials you generate or manage through the Service ("User Content"). This User Content is processed by our systems, including AI/LLM components, to provide and enhance the features and functionality of the Service.
-*   **Audio Recordings for Transcription:** To enable voice-to-text features, the Service captures your audio input. This audio data is immediately transmitted to our third-party AI service provider, Google (specifically, the Gemini API, which we use as a "Paid Service" under their terms), for the sole purpose of transcription. **RocketByte itself does not store the raw audio recordings after they have been transmitted for transcription.** As of the "Last Updated" date of this Privacy Policy, Google's terms for Paid Services of the Gemini API indicate that Google does not use your audio prompts or the transcribed responses from this Paid Service to improve their general AI models. Google states that they process this data in accordance with their Data Processing Addendum and may log prompts and responses for a limited time solely for abuse detection and legal/regulatory purposes. This data may be stored transiently or cached by Google as necessary to provide the transcription service. **However, Google's terms and practices may change, and we encourage you to review their current relevant terms and data processing information for their AI services, including the [Gemini API Additional Terms of Service](https://ai.google.dev/gemini-api/terms), which are authoritative.** The transcribed text, once returned to our Service, becomes part of your User Content.
+*   **Audio Recordings for Transcription:** To enable voice-to-text features, the Service captures your audio input. This audio data is immediately transmitted to our third-party AI service provider, Google (specifically, the Gemini API, which we use as a "Paid Service" under their terms), for the sole purpose of transcription. **RokaByte itself does not store the raw audio recordings after they have been transmitted for transcription.** As of the "Last Updated" date of this Privacy Policy, Google's terms for Paid Services of the Gemini API indicate that Google does not use your audio prompts or the transcribed responses from this Paid Service to improve their general AI models. Google states that they process this data in accordance with their Data Processing Addendum and may log prompts and responses for a limited time solely for abuse detection and legal/regulatory purposes. This data may be stored transiently or cached by Google as necessary to provide the transcription service. **However, Google's terms and practices may change, and we encourage you to review their current relevant terms and data processing information for their AI services, including the [Gemini API Additional Terms of Service](https://ai.google.dev/gemini-api/terms), which are authoritative.** The transcribed text, once returned to our Service, becomes part of your User Content.
 *   **Passcode Information:** We store an encrypted salt (a non-reversible fingerprint) of the passcode you set to lock/unlock ideabooks. We do not store your actual passcode.
 *   **Communications:** If you contact us directly (e.g., for support), we may receive additional information about you such as your name, email address, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.
 
@@ -47,7 +47,7 @@ We use the information we collect for various purposes, including to:
 *   Comply with legal obligations and protect our rights and the rights of others.
 *   For any other purpose with your consent.
 
-> **AI Model Training Clarification:** RocketByte LLC does not use your identifiable User Content to train its own proprietary AI models (if any exist separately from third-party provided models). When you use Noeji, your User Content (such as audio for transcription or text prompts for AI features) is processed by our third-party AI service provider, Google (using the Gemini API as a "Paid Service"). As of the "Last Updated" date of this Privacy Policy, Google's terms for such Paid Services (see [Gemini API Additional Terms of Service](https://ai.google.dev/gemini-api/terms)) state that Google does not use your prompts or responses from this Paid Service usage to improve their general AI models. Their processing is governed by their specific Data Processing Addendum. **Because these third-party terms can be updated by Google, we encourage you to review them directly for the most current information on their data handling practices.**
+> **AI Model Training Clarification:** RokaByte LLC does not use your identifiable User Content to train its own proprietary AI models (if any exist separately from third-party provided models). When you use Noeji, your User Content (such as audio for transcription or text prompts for AI features) is processed by our third-party AI service provider, Google (using the Gemini API as a "Paid Service"). As of the "Last Updated" date of this Privacy Policy, Google's terms for such Paid Services (see [Gemini API Additional Terms of Service](https://ai.google.dev/gemini-api/terms)) state that Google does not use your prompts or responses from this Paid Service usage to improve their general AI models. Their processing is governed by their specific Data Processing Addendum. **Because these third-party terms can be updated by Google, we encourage you to review them directly for the most current information on their data handling practices.**
 
 ## 3. How We Share Your Information
 
@@ -62,7 +62,7 @@ We may share your information in the following situations:
     *   Comply with applicable law, regulation, legal process, or governmental request.
     *   Enforce our Terms of Service, including investigation of potential violations.
     *   Detect, prevent, or otherwise address fraud, security, or technical issues.
-    *   Protect the rights, property, or safety of RocketByte, our users, or the public as required or permitted by law.
+    *   Protect the rights, property, or safety of RokaByte, our users, or the public as required or permitted by law.
 *   **Business Transfers:** In connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business by another company, your information may be transferred as part of that transaction. We will use reasonable efforts to notify you via email and/or a prominent notice on our Service of any change in ownership or uses of your personal information, as well as any choices you may have.
 *   **Aggregated or Anonymized Data:** We may share aggregated or anonymized information that does not directly identify you for research, analysis, or other purposes. For example, we may share statistics about Service usage.
 *   **With Your Consent:** We may share your information for other purposes with your explicit consent.
@@ -111,7 +111,7 @@ If you are a parent or guardian and believe that an individual under the age of 
 
 ## 8. Third-Party Websites and Services
 
-The Service may contain links to third-party websites or services that are not owned or controlled by RocketByte. This Privacy Policy does not apply to the practices of third parties that we do not own or control. We encourage you to review the privacy policies of any third-party service you interact with.
+The Service may contain links to third-party websites or services that are not owned or controlled by RokaByte. This Privacy Policy does not apply to the practices of third parties that we do not own or control. We encourage you to review the privacy policies of any third-party service you interact with.
 
 ## 9. Changes to This Privacy Policy
 
@@ -121,5 +121,5 @@ We may update this Privacy Policy from time to time. If we make changes we deter
 
 If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:
 
-RocketByte LLC
+RokaByte LLC
 Email: support@rokabyte.com
