@@ -923,10 +923,6 @@ input[type="email"]:focus {
         max-width: 250px;
     }
 
-    .screenshot-mockup {
-        width: 200px;
-        height: 350px;
-    }
 }
 
 @media (max-width: 640px) {
