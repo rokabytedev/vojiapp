@@ -556,6 +556,36 @@ html {
     @apply border-2 border-noeji-blue relative;
 }
 
+/* Launch Special Styles */
+.launch-special {
+    color: var(--noeji-red) !important;
+    font-weight: 600;
+}
+
+.price-crossed {
+    text-decoration: line-through;
+    color: #9ca3af;
+    font-weight: normal;
+}
+
+.price-special {
+    color: var(--noeji-red) !important;
+    font-weight: 600;
+}
+
+.dark .price-crossed {
+    color: #6b7280;
+}
+
+/* Override the light theme pricing card color overrides for our special classes */
+.light .pricing-card .launch-special {
+    color: var(--noeji-red) !important;
+}
+
+.light .pricing-card .price-special {
+    color: var(--noeji-red) !important;
+}
+
 
 /* Showcase Carousel */
 .showcase-carousel {
