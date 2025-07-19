@@ -422,6 +422,18 @@
             </h2>
             <div class="showcase-carousel animate-on-scroll">
                 <div class="carousel-container">
+                    <button class="carousel-arrow carousel-arrow-left" onclick="window.carouselManager?.prevSlide()">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="carousel-arrow carousel-arrow-right" onclick="window.carouselManager?.nextSlide()">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </button>
                     <div class="carousel-slide active">
                         <div class="screenshot-mockup">
                             <img src="assets/usecase_daily_inspiration.png" alt="Daily Inspiration"
@@ -429,8 +441,8 @@
                         </div>
                         <div class="use-case-content">
                             <h3 class="text-2xl font-bold mb-4" style="color: #e9c46a;">✨ Daily Inspiration</h3>
-                            <p class="screenshot-caption">Speak your mind throughout the day. At night, let Noeji craft
-                                your daily story.</p>
+                            <p class="screenshot-caption">Speak your ideas, and let AI turn them into daily
+                                inspirations.</p>
                         </div>
                     </div>
                     <div class="carousel-slide">
@@ -449,8 +461,7 @@
                         </div>
                         <div class="use-case-content">
                             <h3 class="text-2xl font-bold mb-4" style="color: #8ab17d;">💡 Ideas Brainstorming</h3>
-                            <p class="screenshot-caption">Collect every spark for your next masterpiece. Noeji keeps it
-                                all organized.</p>
+                            <p class="screenshot-caption">Collect every spark for your next masterpiece.</p>
                         </div>
                     </div>
                     <div class="carousel-slide">
@@ -469,9 +480,7 @@
                         </div>
                         <div class="use-case-content">
                             <h3 class="text-2xl font-bold mb-4" style="color: #e76f51;">🛒 Shopping List</h3>
-                            <p class="screenshot-caption">Never forget an item again. Just say it, and Noeji remembers
-                                it
-                                for your next trip.</p>
+                            <p class="screenshot-caption">Never forget an item again. Noeji remembers.</p>
                         </div>
                     </div>
                     <div class="carousel-slide">
@@ -480,30 +489,18 @@
                         </div>
                         <div class="use-case-content">
                             <h3 class="text-2xl font-bold mb-4" style="color: #a855f7;">✈️ Travel Dreams</h3>
-                            <p class="screenshot-caption">Dream your next dream trip. Noeji helps you track your
+                            <p class="screenshot-caption">Dream your next dream trip. Noeji helps you build your
                                 bucket list.</p>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-navigation">
-                    <button class="carousel-arrow carousel-arrow-left" onclick="window.carouselManager?.prevSlide()">
-                        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                        </svg>
-                    </button>
-                    <div class="carousel-dots">
-                        <button class="dot active" onclick="showSlide(0)"></button>
-                        <button class="dot" onclick="showSlide(1)"></button>
-                        <button class="dot" onclick="showSlide(2)"></button>
-                        <button class="dot" onclick="showSlide(3)"></button>
-                        <button class="dot" onclick="showSlide(4)"></button>
-                        <button class="dot" onclick="showSlide(5)"></button>
-                    </div>
-                    <button class="carousel-arrow carousel-arrow-right" onclick="window.carouselManager?.nextSlide()">
-                        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                    </button>
+                <div class="carousel-dots">
+                    <button class="dot active" onclick="showSlide(0)"></button>
+                    <button class="dot" onclick="showSlide(1)"></button>
+                    <button class="dot" onclick="showSlide(2)"></button>
+                    <button class="dot" onclick="showSlide(3)"></button>
+                    <button class="dot" onclick="showSlide(4)"></button>
+                    <button class="dot" onclick="showSlide(5)"></button>
                 </div>
             </div>
         </div>
