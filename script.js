@@ -212,6 +212,46 @@ class AnimationManager {
     }
 }
 
+// FAQ Manager
+class FAQManager {
+    constructor() {
+        this.faqItems = document.querySelectorAll('.faq-item');
+        this.init();
+    }
+
+    init() {
+        this.setupFAQToggle();
+    }
+
+    setupFAQToggle() {
+        this.faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            const icon = item.querySelector('.faq-icon');
+
+            question.addEventListener('click', () => {
+                this.toggleFAQ(item, answer, icon);
+            });
+        });
+    }
+
+    toggleFAQ(item, answer, icon) {
+        const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+        
+        if (isOpen) {
+            // Close the FAQ
+            answer.style.maxHeight = '0px';
+            icon.style.transform = 'rotate(0deg)';
+            item.classList.remove('faq-open');
+        } else {
+            // Open the FAQ
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+            icon.style.transform = 'rotate(45deg)';
+            item.classList.add('faq-open');
+        }
+    }
+}
+
 // Form Manager
 class FormManager {
     constructor() {
@@ -615,6 +655,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.themeManager = new ThemeManager();
     window.navigationManager = new NavigationManager();
     window.animationManager = new AnimationManager();
+    window.faqManager = new FAQManager();
     window.formManager = new FormManager();
     window.carouselManager = new CarouselManager();
     window.performanceManager = new PerformanceManager();
